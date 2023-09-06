@@ -1,0 +1,245 @@
+/* Styles généraux */
+body {
+    font-family: Verdana, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header a:hover{
+    background-color: #333;
+    color: #d81010;
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Section Accueil */
+#accueil {
+    background-color: #e7e7e7;
+    overflow: hidden;
+    padding: 50px;
+    text-align: center;
+}
+
+section {
+    overflow: hidden;
+    /* Couleur de fond */
+}
+
+/* Styles pour la section Parcours Scolaire */
+#parcours-scolaire {
+    background-color: #ffffff; /* Couleur de fond */
+    padding: 50px; /* Espace intérieur */
+}
+
+#parcours-scolaire h2 {
+    font-size: 32px; /* Taille du titre */
+    color: #000000; /* Couleur du texte */
+    margin-bottom: 20px; /* Espace sous le titre */
+    text-decoration: underline;
+    
+   /* font-weight: bold;*/
+}
+
+#parcours-scolaire ul {
+    list-style-type: none; /* Supprimer les puces de la liste */
+    padding: 0;
+}
+
+#parcours-scolaire li {
+    margin-bottom: 20px; /* Espace entre chaque élément de la liste */
+}
+
+#parcours-scolaire h3 {
+    font-size: 20px; /* Taille du titre du diplôme */
+    color: #1f1f1f; /* Couleur du texte */
+    padding: 5px;
+
+}
+
+#parcours-scolaire p {
+    font-size: 16px; /* Taille du texte */
+    color: #212121; /* Couleur du texte */
+    margin-top: 5px; /* Espace au-dessus du texte */
+}
+
+.lien-jaune {
+    color: rgb(222, 119, 0); /* Change la couleur du texte en jaune */
+    text-decoration: none;
+    font-style: italic;
+}
+
+.lien-jaune:hover {
+    color: rgb(187, 130, 6); /* Change la couleur du texte en jaune */
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.lien-rouge {
+    color: rgb(222, 0, 0); /* Change la couleur du texte en jaune */
+    text-decoration: none;
+    font-style: italic;
+}
+
+.lien-rouge:hover {
+    color: rgb(80, 2, 2); /* Change la couleur du texte en jaune */
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* Lien de retour vers le haut */
+.retour-haut {
+    display: block;
+    margin-top: 20px; /* Espace au-dessus du lien */
+    text-align: right; /* Alignement à droite */
+    background-color: #e7e7e7;
+
+}
+
+.retour-haut a {
+    text-decoration: none; /* Supprimer le soulignement du lien */
+    color: #007BFF; /* Couleur du lien */
+    font-weight: bold; /* Texte en gras */
+}
+
+.retour-haut :hover{
+    background-color: #9fc4eb; /* Nouvelle couleur de fond en survol */
+    font-style: italic;
+}
+
+/* Section Portfolio */
+#projets {
+    padding: 50px;
+    background-color:#e5e5e5;
+    overflow: hidden;
+}
+
+#projets h2 {
+    font-size: 32px; /* Taille du titre */
+    color: #000000; /* Couleur du texte */
+    margin-bottom: 20px; /* Espace sous le titre */
+    text-decoration: underline;
+}
+
+
+.projet {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.projet h3 {
+    color: #2b2a2a;
+    font-size: 28px; /* Taille du titre */
+
+}
+
+.projet img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    border: 2px solid #000000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    float: left; /* Fait flotter l'image à gauche */
+    margin-right: 20px; /* Ajoute un espacement à droite de l'image */
+
+    border-radius: 10px;
+}
+
+.projet .voir-projet {
+    position: absolute;
+    bottom: 50px;
+    background-color: #007BFF; 
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 330px;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .projet .description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) { /* pour toutes les résolution d'écrans - que 768 px (smartphone)*/
+    .projet .voir-projet {
+        color: #fff; 
+        float: none;
+        position: absolute;
+        margin-left: 30px;
+        bottom: 0px;
+        margin-bottom: 10px;
+    }
+
+    .projet .description { 
+        font-size: 16px;
+        margin: 10px 0px;
+        padding: 5px;
+        line-height: 1.6;
+        letter-spacing: 1px;
+        margin-top: 0px;
+        float: left;
+    }
+
+    .projet img {
+        transform: translate(20%, 0%);
+    }
+}
+@media (min-width: 1024px){ /* pour tous les écrans de resolution + que 1024px*/
+    .projet .description {
+        color: #343434; 
+        font-size: 20px;
+        margin: 10px 20px;
+        padding: 5px;
+        line-height: 1.6;
+        letter-spacing: 1px;
+    }
+}
+
+
+/* Section À Propos */
+#a-propos {
+    padding: 50px;
+}
+
+/* Section Contact */
+#contact {
+    padding: 50px;
+    background-color: #e7e7e7;
+
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
