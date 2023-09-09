@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Styles pour les sections de contenu */
+.motivations,
+.projet,
+.difficultes {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.motivations h2,
+.projet,
+.difficultes h2 {
+    font-size: 24px;
+}
+
+.motivations p,
+.projet,
+.difficultes p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Styles pour le bouton "Voir mes Projets" */
+.bouton-projets {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.bouton-projets:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour le pied de page */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

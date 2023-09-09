@@ -33,6 +33,7 @@ nav ul li a {
     color: #fff;
 }
 
+
 /* Section Accueil */
 #accueil {
     background-color: #e7e7e7;
@@ -127,7 +128,7 @@ section {
     font-style: italic;
 }
 
-/* Section Portfolio */
+/** Section projet */
 #projets {
     padding: 50px;
     background-color:#e5e5e5;
@@ -135,8 +136,8 @@ section {
 }
 
 #projets h2 {
-    font-size: 32px; /* Taille du titre */
-    color: #000000; /* Couleur du texte */
+    font-size: 32px;
+    color: #000000;
     margin-bottom: 20px; /* Espace sous le titre */
     text-decoration: underline;
 }
@@ -153,7 +154,7 @@ section {
 
 .projet h3 {
     color: #2b2a2a;
-    font-size: 28px; /* Taille du titre */
+    font-size: 28px;
 
 }
 
@@ -223,16 +224,117 @@ section {
     }
 }
 
+/**Section autres projets*/
+.mini-projets {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #e0e0e0;
+    
+}
+@media (min-width: 1412px){
+    .mini-projet {
+        background-color: #dbdbdb;
+        padding: 20px;
+        margin-bottom: 20px;
+        overflow: auto;
+        min-width: 300px;
+        min-width: 380;
+        height: 380px;
+        margin: 0px;
+        text-align: center;
+        /*box-shadow: 0 10 100px rgba(0, 0, 0, 0.1);*/
+
+        position: relative;
+    }
+
+    .mini-projet img {
+        max-width: 100%;
+        height: 200px;
+        width: 200px;
+        border: 2px solid #000000;
+        margin-top: 0px;
+        margin-bottom: 10px;
+
+        float: center; /* Fait flotter l'image à gauche */
+        margin-right: 20px; /* Ajoute un espacement à droite de l'image */
+
+        border-radius: 10px;
+    }
+}
+@media (min-width: 800px) and (max-width: 1412px){
+    .mini-projet {
+        background-color: #dbdbdb;
+        padding: 20px;
+        margin-bottom: 20px;
+        overflow: auto;
+        min-width: 400px;
+        min-width: 380;
+        height: 380px;
+        margin: 10px;
+        text-align: center;
+        /*box-shadow: 0 10 100px rgba(0, 0, 0, 0.1);*/
+    
+        position: relative;
+    }
+    
+    .mini-projet img {
+        max-width: 100%;
+        height: 200px;
+        width: 200px;
+        border: 2px solid #000000;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    
+        float: center; /* Fait flotter l'image à gauche */
+        margin-right: 20px; /* Ajoute un espacement à droite de l'image */
+    
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 800px){
+    .mini-projet {
+        background-color: #dbdbdb;
+        padding: 20px;
+        margin-bottom: 20px;
+        overflow: auto;
+        min-width: 600px;
+        height: 380px;
+        margin: 10px;
+        text-align: center;
+        /*box-shadow: 0 10 100px rgba(0, 0, 0, 0.1);*/
+    
+        position: relative;
+    }
+    
+    .mini-projet img {
+        max-width: 100%;
+        height: 200px;
+        width: 200px;
+        border: 2px solid #000000;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    
+        float: center; /* Fait flotter l'image à gauche */
+        margin-right: 20px; /* Ajoute un espacement à droite de l'image */
+    
+        border-radius: 10px;
+    }
+}
 
 /* Section À Propos */
 #a-propos {
     padding: 50px;
+    background-color: #e2e2e2;
 }
 
 /* Section Contact */
 #contact {
     padding: 50px;
-    background-color: #e7e7e7;
+    background-color: #e0e0e0;
 
 }
 
