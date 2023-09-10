@@ -113,7 +113,7 @@ section {
     display: block;
     margin-top: 20px; /* Espace au-dessus du lien */
     text-align: right; /* Alignement à droite */
-    background-color: #e7e7e7;
+    background-color: #f1f1f1;
 
 }
 
@@ -181,6 +181,12 @@ section {
     border-radius: 5px;
     margin-left: 330px;
     margin-top: 10px;
+}
+
+.projet .voir-projet :hover{
+    font-size: 17px;
+    font-style: italic;
+    color: #fff;
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
@@ -336,6 +342,13 @@ section {
     padding: 50px;
     background-color: #e0e0e0;
 
+}
+
+#contact h2 {
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 20px; /* Espace sous le titre */
+    text-decoration: underline;
 }
 
 /* Pied de page */
