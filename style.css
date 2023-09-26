@@ -1,4 +1,26 @@
-/* Styles généraux */
+/* 
+:root {
+    --couleur-fond-principale: #fcd7b9;
+    --couleur-fond-secondaire: #F1DEC9;
+    --couleur-fond-sombre: #191717;
+} */
+
+:root {
+    --couleur-fond-principale: #f8ebcf;
+    --couleur-fond-secondaire: #dfc7a7;
+    --couleur-fond-sombre: #191717;
+}
+
+::-moz-selection { /** Pour firefox */
+    color: rgb(255, 255, 255);
+    background: #1B2432;
+}
+  
+::selection {
+    color: rgb(255, 255, 255);
+    background: #1B2432;
+}
+
 body {
     font-family: Verdana, sans-serif, sans-serif;
     margin: 0;
@@ -6,15 +28,15 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: var(--couleur-fond-sombre);
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
 header a:hover{
-    background-color: #333;
-    color: #d81010;
+    background-color: var(--couleur-fond-sombre);
+    color: #dfc907;
     font-style: italic;
 }
 
@@ -36,7 +58,7 @@ nav ul li a {
 
 /* Section Accueil */
 #accueil {
-    background-color: #e7e7e7;
+    background-color: var(--couleur-fond-secondaire);
     overflow: hidden;
     padding: 50px;
     text-align: center;
@@ -49,7 +71,7 @@ section {
 
 /* Styles pour la section Parcours Scolaire */
 #parcours-scolaire {
-    background-color: #ffffff; /* Couleur de fond */
+    background-color: var(--couleur-fond-principale); /* Couleur de fond */
     padding: 50px; /* Espace intérieur */
 }
 
@@ -108,30 +130,28 @@ section {
     font-style: italic;
 }
 
-/* Lien de retour vers le haut */
 .retour-haut {
     display: block;
-    margin-top: 20px; /* Espace au-dessus du lien */
-    text-align: right; /* Alignement à droite */
-    background-color: #f1f1f1;
-
+    margin-top: 20px;
+    text-align: right;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    float: right;
+    background-color: var(--couleur-fond-secondaire);
+    transition: background-color 0.4s;
 }
 
-.retour-haut a {
-    text-decoration: none; /* Supprimer le soulignement du lien */
-    color: #007BFF; /* Couleur du lien */
-    font-weight: bold; /* Texte en gras */
-}
 
-.retour-haut :hover{
-    background-color: #9fc4eb; /* Nouvelle couleur de fond en survol */
+.retour-haut:hover{
+    background-color: #d2a904; 
     font-style: italic;
 }
 
 /** Section projet */
 #projets {
     padding: 50px;
-    background-color:#e5e5e5;
+    background-color: var(--couleur-fond-secondaire);
     overflow: hidden;
 }
 
@@ -334,13 +354,13 @@ section {
 /* Section À Propos */
 #a-propos {
     padding: 50px;
-    background-color: #e2e2e2;
+    background-color: var(--couleur-fond-principale);
 }
 
 /* Section Contact */
 #contact {
     padding: 50px;
-    background-color: #e0e0e0;
+    background-color: var(--couleur-fond-secondaire);
 
 }
 
@@ -353,7 +373,7 @@ section {
 
 /* Pied de page */
 footer {
-    background-color: #333;
+    background-color: var(--couleur-fond-sombre);;
     color: #fff;
     text-align: center;
     padding: 10px;
