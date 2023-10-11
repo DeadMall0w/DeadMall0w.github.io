@@ -75,7 +75,6 @@ header a:hover{
 
 #test {
     padding: 20px;
-    /* Autres styles pour la section */
 }
 
 
@@ -93,18 +92,16 @@ header a:hover{
 
 #parcours-scolaire {
     background-color: #ffffff00;
-    padding: 40px; /* Espace intérieur */
+    padding: 40px;
     text-align: center;
 }
 
-/* Styles pour les sections impaires (à droite) */
 #projets {
     background-color: #070707e9;
-    padding: 40px; /* Espace intérieur */
+    padding: 40px;
     text-align: center;
 }
 
-/* Autres styles pour le contenu des sections */
 h2{
     font-size: 32px;
     text-decoration: underline;
@@ -114,7 +111,7 @@ h2{
 
 #projets p, #parcours-scolaire p {
     font-size: 16px;
-    color: #666; /* Couleur du texte */
+    color: #666; 
 }
 
 
@@ -123,7 +120,6 @@ h2{
 
 
 
-/* Pied de page */
 footer {
     background-color: var(--couleur-fond-sombre);;
     color: #fff;
@@ -131,7 +127,7 @@ footer {
     padding: 10px;
 }
 
-
+/* effet de vague */
 .vagueBas {
     position: absolute;
     top: 0;
