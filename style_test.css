@@ -73,6 +73,16 @@ header a:hover{
 }
 
 
+#test {
+    padding: 20px;
+    /* Autres styles pour la section */
+}
+
+
+
+
+
+
 #acceuil {
     background-color: #ffffff00;
     padding-top: 200px;
