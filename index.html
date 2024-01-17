@@ -8,19 +8,27 @@
     <link rel="stylesheet" href="style_test.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <nav>
         <ul>
-          <li><a class="slide-button" href="#parcours-scolaire">Parcours Scolaire</a></li>
+          <li>
+            <a class="slide-button" href="#parcours-scolaire"
+              >Parcours Scolaire</a
+            >
+          </li>
           <li><a class="slide-button" href="#projets">Projets</a></li>
           <li><a class="slide-button" href="#a-propos">À Propos</a></li>
           <li><a class="slide-button" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- Waves Section -->
     <section id="vague-section">
       <p></p>
       <div class="vagueBas">
+        <!-- SVG Wave -->
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -34,68 +42,56 @@
         </svg>
       </div>
     </section>
+
+    <!-- Welcome Section -->
     <section id="accueil">
       <h2>Bienvenue sur mon site</h2>
       <p>
-        Je m'appelle Raphaël Berquier. Je suis actuellement étudiant en dernière
-        année de lycée, où je me spécialise dans le domaine des mathématiques et
-        de l'informatique. <br />
-        Dans mon temps libre, j'adore coder des programmes en tout genre pour me
-        faciliter certaines taches, comme la sauvegarde automatique de fichier
-        important, ou encore des sites pour faire des quizs pour réviser les
-        cours.
+        Je suis un étudiant en dernière année de lycée, qui se spécialise en
+        mathématiques et informatique. <br />
+        Passionné par la programmation, j’ai développé plusieurs outils pour
+        automatiser des tâches quotidiennes, comme la sauvegarde de fichiers et
+        la création de quiz pour tester mes connaissances.
       </p>
     </section>
 
+    <!-- Education Section -->
     <section id="parcours-scolaire">
       <h2>Parcours Scolaire</h2>
       <ul>
         <li>
           <h3>Lycée Edouard Branly 2021 - 2024</h3>
           <p>
-            2021-2024 - SI Euro (Science de l'ingénieur en Anglais)
-            <br />
-            <br />
-
-            2023 - Particpation au
+            2021-2024 - SI Euro (Science de l'ingénieur en Anglais) <br />
+            2023 - Participation aux
             <a
               href="https://www.education.gouv.fr/les-olympiades-nationales-de-mathematiques-5732"
-              ,
               target="_blank"
-              ,
               class="lien-rouge"
               >"Olympiades de mathématiques"</a
             >
             <br />
-            <br />
-
             2021 - Option science de l'ingénieur
           </p>
         </li>
         <li>
           <h3>Collège Paul Eluard 2016 - 2020</h3>
           <p>
-            2020-2021 - LCE (Langue et Culture Européenne)
-            <br />
-            <br />
-
-            2020 - Particpation avec mon équipe a :
+            2020-2021 - LCE (Langue et Culture Européenne) <br />
+            2020 - Participation avec mon équipe à :
             <a
               href="https://www.lesmotsenor.org/"
-              ,
               target="_blank"
-              ,
               class="lien-jaune"
               >"Les Mots en Or"</a
             >
             <br />
-            <br />
-            2016 - Particpation au Conseil Municipal des Enfants
+            2016 - Participation au Conseil Municipal des Enfants
           </p>
         </li>
       </ul>
-
       <div class="vagueTop">
+        <!-- SVG Wave -->
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -110,6 +106,7 @@
       </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projets">
       <h2>Mes Projets</h2>
       <div class="projet">
@@ -117,7 +114,7 @@
         <img src="img/generation_procedural.png" alt="Image du projet" />
         <p>Description du projet.</p>
       </div>
-      <div style="clear: both"></div>
+
       <div class="projet">
         <h3>Génération procédurale</h3>
         <img src="img/generation_procedural.png" alt="Image du projet" />
@@ -130,7 +127,7 @@
           >
         </div>
       </div>
-      <div style="clear: both"></div>
+
       <div class="projet">
         <h3>Nom du Projet 2</h3>
         <img src="img/astroneer.gif" alt="Image du projet" />
@@ -145,17 +142,26 @@
         <div class="voir-projet">
           <a href="projet2.html" target="_self">Voir le projet</a>
         </div>
-        <div style="clear: both"></div>
       </div>
 
-      <div style="clear: both"></div>
-
+      <!-- Grid Layout for Mini Projects -->
       <h2>Autres Projets</h2>
       <section class="mini-projets">
         <div class="mini-projet">
+          <img src="img/test.gif" alt="Projet 2" />
+          <div class="description">
+            <h2>Automatisation</h2>
+            <p>
+              Des programmes que j'ai fait pour automatiser certaines taches
+              comme la sauvegarde de fichier et la collecte de devoir
+            </p>
+          </div>
+        </div>
+
+        <div class="mini-projet">
           <img src="img/dino_chrome.gif" alt="Projet 1" />
           <div class="description">
-            <h2>Projet 1</h2>
+            <h2>Numworks</h2>
             <p>
               J'ai codé plusieurs jeux pour la calculatrice numworks, pour
               apprendre le python et creer des jeux sans aucune aide (moteur
@@ -163,34 +169,35 @@
             </p>
           </div>
         </div>
-        <div class="mini-projet">
-          <img src="img/test.gif" alt="Projet 2" />
-          <div class="description">
-            <h2>Projet 2</h2>
-            <p>Une brève description du Projet 2.</p>
-          </div>
-        </div>
+
         <div class="mini-projet">
           <img src="img/test.gif" alt="Projet 3" />
           <div class="description">
-            <h2>Projet 3</h2>
-            <p>Une brève description du Projet 3.</p>
+            <h2>Ascii maze</h2>
+            <p>
+              Projet qui consistait a faire un mini jeu de labyrinthe qui tourne
+              dans la console avec uniquement des characteres ascii.
+            </p>
           </div>
         </div>
+
         <div class="mini-projet">
-          <img src="img/test.gif" alt="Projet 3" />
+          <img src="img/test.gif" alt="Projet 4" />
           <div class="description">
-            <h2>Projet 3</h2>
-            <p>Une brève description du Projet 3.</p>
+            <h2>Projet 4</h2>
+            <p>Une brève description du Projet 4.</p>
           </div>
         </div>
       </section>
     </section>
+
+    <!-- About Me Section -->
     <section id="a-propos">
       <h2>Plus sur moi</h2>
       <p>Je suis un développeur passionné par...</p>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
       <h2>Contact</h2>
       <p>
@@ -198,33 +205,13 @@
         <a href="mailto:raphael.berquier@gmail.com"
           >raphael.berquier@gmail.com</a
         >
-        <a href="#accueil" class="retour-haut"> Retour en haut </a>
       </p>
+      <a href="#accueil" class="retour-haut"> Retour en haut </a>
     </section>
 
+    <!-- Footer -->
     <footer>
       <p>&copy; 2023 Berquier Raphaël</p>
     </footer>
   </body>
 </html>
-
-<!-- * a faire
-
-TODO : mes projets pour le futur / objectifs
-TODO : les langages que je conais et que je suis entrain d'apprendre
-
-TODO : mes  compétences / langue
-TODO : formation (ce que j'ai appris/ lu)
-TODO : sport
-TODO : leetcode 
-TODO : mes passions
-TODO : 
-TODO : 
-TODO : 
-TODO : 
-TODO : 
-
-
-
-
--->

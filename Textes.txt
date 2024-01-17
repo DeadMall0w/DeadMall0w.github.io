@@ -1,7 +1,6 @@
 TODO :
 Regler le soucis des vagues en mobile
 Refaire l'espace "Mes projets"
-Refaire l'espace "Autres projets"
 Faire tous les projets et mini projets
 terminer la vague a la fin
 Faire mieux le contact
