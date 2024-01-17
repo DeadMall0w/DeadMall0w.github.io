@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .slide-button {
+    color: #fff; /* Couleur du texte */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative; /* Position relative pour l'animation */
+    overflow: hidden; /* Masquer le débordement */
+  }
+  .slide-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #e74c3c;
+    transition: left 0.3s;
+    /* z-index: -1; Placez l'animation derrière le texte */
+  }
+  
+  .slide-button:hover::before {
+    left: 0;
+    /* z-index: -1; Assurez-vous que l'animation reste derrière le texte lorsqu'elle est remplie */
+  }
