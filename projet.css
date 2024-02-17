@@ -5,6 +5,7 @@
     --couleur-fond-secondaire: #2d0033;
     --couleur-fond-sombre: #191717;
 }
+
 /* Selection du texte */
 ::-moz-selection { /** Pour firefox */
     color: rgb(255, 255, 255);
@@ -97,20 +98,20 @@ section {
     justify-content: space-around;
     align-items: center;
     padding: 20px; /* Ajustez selon votre besoin */
-  }
+}
   
-  .project-info,
-  .project-image {
+.project-info,
+.project-image {
     flex: 1;
-  }
+}
   
-  .project-info h2 {
+.project-info h2 {
     margin-bottom: 10px; /* Espacement entre le titre et le paragraphe */
-  }
+}
   
-  .project-image img {
+.project-image img {
     max-width: 100%; /* Ajuste la largeur de l'image pour ne pas déborder de la zone */
-  }
+}
 
 #parcours-scolaire {
     background-color: #ffffff00;
@@ -128,7 +129,6 @@ section {
 #projets {
     background-color: #070707e9;
     padding: 40px;
-
 }
 
 #projets img {
@@ -210,6 +210,7 @@ section {
 .waveHome .shape-fill {
     fill: var(--couleur-fond-sombre);
 }
+
 .waveBottom, .waveTop .shape-fill {
     fill: #070707e9;;
 }
