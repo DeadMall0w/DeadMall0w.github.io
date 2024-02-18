@@ -89,6 +89,9 @@ header {
 header a{
     padding: 10px;
 }
+a {
+    color: #7237d1;
+}
 
 h2{
     font-size: 32px;
