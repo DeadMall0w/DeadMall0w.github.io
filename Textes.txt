@@ -109,6 +109,17 @@ Je suis passionné par les défis, qu’ils soient liés à la programmation ou 
 
 ## Jeux sur le play-store
 ## c'est quoi ?
+j'ai fait différents jeux au cours de ces derniers années, allant de simple jeu en 2D, a des jeux en 3D 
+avec du multijoueur, et parfois l'ajout d'un autre de mes projets : la génération procédural (lien github), je code ces jeux en c# sur le moteur Unity, et je suis entrain d'apprendre le moteur de jeu open source Godot.
+listes de jeux
+- cloudy jumpy
+- Among us 3D (réplique d'un jeu populaire en 3 dimension)
+- Jeux avec mon cousin (godot ?)
+- cave game
+- trucs avec les ias qui se battent
+- Cuadrado (lien du play store)
+- Roule le rat (lien pour tester le jeu), ce jeu est toujours en développement, je ne suis pas le seul a réaliser ce jeu
+- Platormer 2D (toujours en développement)
 
 ### but
 > ce que ca m'a apporté 
@@ -116,5 +127,6 @@ Je suis passionné par les défis, qu’ils soient liés à la programmation ou 
 ### difficultés
 
 ### futur de projet
-
+- Roule le rat
+- jeu avec mon couz
 
