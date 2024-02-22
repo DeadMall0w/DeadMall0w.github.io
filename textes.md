@@ -97,6 +97,8 @@ Je suis passionné par les défis, qu’ils soient liés à la programmation ou 
 
 ## Ascii maze
 ## c'est quoi ?
+le but de ce projet était de faire un jeu sans librairie, ni moteur graphique, uniquement le langage c# et la console.
+Tous les éléments affichés a l'écran sont des caractères Ascii.
 
 ### but
 > ce que ca m'a apporté 
@@ -104,6 +106,7 @@ Je suis passionné par les défis, qu’ils soient liés à la programmation ou 
 ### difficultés
 
 ### futur de projet
+J'aimerais étendre plus loin le défis 
 
 
 
