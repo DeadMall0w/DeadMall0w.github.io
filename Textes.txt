@@ -45,3 +45,16 @@ J’ai acquis une solide base dans plusieurs langages de programmation, dont le 
 
 # Mes passions
 Je suis passionné par les défis, qu’ils soient liés à la programmation ou au sport. J’ai pratiqué le Viet vo Dao pendant 5 ans et le paddle en club pendant 3 ans, et je continue à faire du paddle pendant l’été. En matière de programmation, j’aime particulièrement les défis qui impliquent de coder un programme dans un délai serré ou d’apprendre un nouveau langage de programmation. Pendant mon temps libre, je m’adonne à la résolution de problèmes sur des sites comme LeetCode, qui proposent une grande variété de défis de programmation.
+
+# Projets
+## gen procédural
+### c'est quoi ?
+
+### but
+> ce que ca m'a apporté 
+
+### difficultés
+
+### futur de projet
+
+## mon jeu de plateau 
