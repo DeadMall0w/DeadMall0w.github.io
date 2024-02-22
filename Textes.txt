@@ -1,4 +1,4 @@
-TODO :
+I'llTODO :
 Refaire l'espace "Mes projets"
 Faire tous les projets et mini projets
 Faire mieux le contact
@@ -114,10 +114,10 @@ avec du multijoueur, et parfois l'ajout d'un autre de mes projets : la générat
 listes de jeux
 - cloudy jumpy
 - Among us 3D (réplique d'un jeu populaire en 3 dimension)
-- Jeux avec mon cousin (godot ?)
+- Jeux avec mon cousin (godot ?)(multijoueur local)
 - cave game
-- trucs avec les ias qui se battent
-- Cuadrado (lien du play store)
+- trucs avec les ias qui se battent(ia)
+- Cuadrado (lien du play store)(processus de publication de jeu)
 - Roule le rat (lien pour tester le jeu), ce jeu est toujours en développement, je ne suis pas le seul a réaliser ce jeu
 - Platormer 2D (toujours en développement)
 
