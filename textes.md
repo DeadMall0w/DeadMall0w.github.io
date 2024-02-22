@@ -61,7 +61,7 @@ Je suis passionné par les défis, qu’ils soient liés à la programmation ou 
 
 
 ## mon jeu de plateau 
-## # c'est quoi ?
+### c'est quoi ?
 
 ### but
 > ce que ca m'a apporté 
