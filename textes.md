@@ -117,7 +117,7 @@ L'affichage en ascii a poser de nombreux problème comme le clignotement, lorque
 Reduire la portée de vue.
 
 ### futur de projet
-J'aimerais étendre plus loin le défis et faire un jeu en 3D toujours avec des caractères Ascii, en utilisant des techniques de raycasting.
+J'aimerais étendre plus loin le défis et faire un jeu en 3D toujours avec des caractères Ascii, en utilisant des techniques de raycasting utiliser pour les 1ers jeux 3D comme Doom ou Wolfenstein.
 
 
 
@@ -139,6 +139,7 @@ listes de jeux
 > ce que ca m'a apporté 
 
 ### difficultés
+Apprendre un logiciel complexe 
 
 ### futur de projet
 - Roule le rat
