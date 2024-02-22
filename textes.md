@@ -62,13 +62,20 @@ Je suis passionné par les défis, qu’ils soient liés à la programmation ou 
 
 ## mon jeu de plateau 
 ### c'est quoi ?
+C'est un jeu de plateau, avec différentes règles, coder pour un site internet.
+
 
 ### but
 > ce que ca m'a apporté 
+M'améliorer en développement WEB, surtout en JavaScript.
 
 ### difficultés
+Coder un jeu de plateau,avec le JavaScript.
+
+Creer des règles pour avoir un jeu agréable et qui repose sur la stratégie et l'anticipation.
 
 ### futur de projet
+Essayer de coder une ia, qui joue bien et qui peux battre des joueurs non expérimentés.
 
 
 ## Automatisation
@@ -80,6 +87,7 @@ Je suis passionné par les défis, qu’ils soient liés à la programmation ou 
 ### difficultés
 
 ### futur de projet
+Automatiser encore plus ma vie, et les actions du quotidien. 
 
 
 
@@ -101,9 +109,12 @@ le but de ce projet était de faire un jeu sans librairie, ni moteur graphique, 
 Tous les éléments affichés a l'écran sont des caractères Ascii.
 
 ### but
-> ce que ca m'a apporté 
+> ce que ca m'a apporté
 
 ### difficultés
+Creer un labyrinthe proceduralement, en pouvant aller partout.
+L'affichage en ascii a poser de nombreux problème comme le clignotement, lorque le joueur posé.
+Reduire la portée de vue.
 
 ### futur de projet
 J'aimerais étendre plus loin le défis et faire un jeu en 3D toujours avec des caractères Ascii, en utilisant des techniques de raycasting.
