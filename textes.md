@@ -106,7 +106,7 @@ Tous les éléments affichés a l'écran sont des caractères Ascii.
 ### difficultés
 
 ### futur de projet
-J'aimerais étendre plus loin le défis 
+J'aimerais étendre plus loin le défis et faire un jeu en 3D toujours avec des caractères Ascii, en utilisant des techniques de raycasting.
 
 
 
