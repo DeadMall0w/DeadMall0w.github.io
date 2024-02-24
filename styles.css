@@ -155,6 +155,16 @@ section {
     min-width: 150px;
 }
 
+/* .voir-projet{
+    padding: 0px;
+    background-color: #2d0033;
+    margin: 0px;
+} */
+/* .description {
+    margin: 0px;
+    background-color: #d13737;
+} */
+
 /* Média query pour les écrans de petite taille (par exemple, smartphones) */
 @media screen and (max-width: 767px) {
     .mini-projets {
