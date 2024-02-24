@@ -160,3 +160,8 @@ section {
 footer {
     text-align: center;
 }
+
+
+#maze-gif {
+max-width: 450px;
+}

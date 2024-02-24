@@ -13,9 +13,7 @@
       <nav>
         <ul>
           <li>
-            <a class="slide-button" href="../../index.html"
-              >Retour</a
-            >
+            <a class="slide-button" href="../../index.html">Retour</a>
           </li>
           <li>
             <a class="slide-button" href="../../index.html#projets"
@@ -28,7 +26,6 @@
       </nav>
     </header>
 
-    <!-- Contenu du projet -->
     <section id="accueil">
       <h2>Ascii-Maze</h2>
       <div class="text-image">
@@ -48,24 +45,38 @@
         </div>
         <img src="Gameplay.gif" alt="Image du bloc de texte" />
       </div>
-
-      <!-- <img src="img/Celeste.jfif" alt="Image du projet" /> -->
-      <div class="text-image">
-        <div>
-          <h3>Difficultés</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            scelerisque dui vitae risus ultrices, ac efficitur mi molestie.
-            Integer tincidunt interdum justo, eu commodo lacus. Fusce vel ex in
-            enim euismod iaculis. Integer at accumsan elit. Phasellus nec
-            scelerisque justo. Aenean commodo purus nec velit vulputate, nec
-            suscipit risus mattis. Praesent vitae ligula accumsan, ullamcorper
-            mi nec, tempus ex.
-          </p>
-        </div>
-        <img src="../img/Celeste.jfif" alt="Image du bloc de texte" />
-      </div>
     </section>
+
+    <div class="text-image">
+      <div>
+        <h3 id="difficultes">Difficultés</h3>
+        <p>
+          Créer un labyrinthe procéduralement et l'afficher uniquement en ASCII
+          a posé de nombreux problèmes, notamment en ce qui concerne le
+          clignotement. Chaque frame était un message dans la console,
+          supprimant ainsi l'ancien et pouvant causer des clignotements. Ce
+          problème a été résolu en envoyant un premier message et en le mettant
+          à jour pour chaque frame, ce qui a éliminé l'effet de clignotement.
+          <br />
+          <br />
+          De plus, la génération du labyrinthe a suscité une grande réflexion,
+          car chaque section du labyrinthe devait être reliée, y compris la
+          sortie. C'est pourquoi j'ai utiliser une version l'algorithme de
+          <a href="https://en.wikipedia.org/wiki/Depth-first_search"
+            >Depth First Search.</a
+          >
+          <br />
+          <br />
+          Cet algorithme fonctionne en explorant autant en profondeur que
+          possible un chemin aléatoire jusqu'à ce qu'il atteigne une impasse.
+          Ensuite, il fait demi-tour jusqu'à la dernière intersection sans
+          impasse et explore ensuite les autres chemins non explorés. Ce
+          processus se répète jusqu'à ce que toutes les sections du labyrinthe
+          soient générées.
+        </p>
+      </div>
+      <img id="maze-gif" src="Maze.gif" alt="Image du bloc de texte" />
+    </div>
 
     <div class="text-image">
       <div>
