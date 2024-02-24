@@ -152,7 +152,7 @@ section {
 
 .mini-projet img {
     max-width: 100%;
-    min-width: 150px;
+    min-width: 250px;
 }
 
 /* .voir-projet{
@@ -166,10 +166,11 @@ section {
 } */
 
 /* Média query pour les écrans de petite taille (par exemple, smartphones) */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 750px) {
     .mini-projets {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: none;
     }
+
 }
 
 
@@ -227,7 +228,7 @@ section {
     fill: #070707e9;;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
     .waveTop svg {
         height: 60px;
     }
