@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="icon" href="../img/icon.png" type="image/png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berquier Raphaël - Jeux Numworks</title>
+    <link rel="stylesheet" href="../template.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a class="slide-button" href="../../index.html">Retour</a>
+          </li>
+          <li>
+            <a class="slide-button" href="../../index.html#projets"
+              >Mes projets</a
+            >
+          </li>
+          <li><a class="slide-button" href="#difficultes">Difficultés</a></li>
+          <li><a class="slide-button" href="#futur">Futur</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="accueil">
+      <h2>jeux Numworks</h2>
+      <div class="text-image">
+        <div>
+          <p>
+            J'ai fait plusieurs jeux en python pour la calculatrice
+            <a target="_blank" href="https://www.numworks.com/fr/">Numworks</a>.
+            <br />
+            Plusieurs sont des reproductions de jeux existant comme le jeu du
+            dinosaure de chrome, d'autres sont la reconstitution de jeux que
+            j'ai fait comme cuadrado, jeux où il faut remplir le plus possible
+            le labyrinthe.
+          </p>
+        </div>
+        <img src="dino_chrome.gif" alt="Image du bloc de texte" />
+      </div>
+    </section>
+
+    <div class="text-image">
+      <div>
+        <h3 id="difficultes">Difficultés</h3>
+        <p>
+          La principale difficulté résidait dans le fait de programmer sur une
+          plateforme que je ne connaissais pas : la calculatrice NumWorks, et
+          avec un langage de programmation que je ne maîtrisais pas. Cela m'a
+          permis d'apprendre les bases de Python. <br />
+          <br />
+          De plus, la calculatrice a une taille de fichier très limitée, ce qui
+          m'a contraint à créer le jeu Pong avec un script de moins de 2 ko.
+          <br />
+          Également, la calculatrice ne dispose que de fonctions graphiques peu
+          avancées et ne possède aucun moteur physique ni gestion d'image.
+          <br />
+          C'est pourquoi je me suis lancé dans le défi de recréer un moteur
+          physique rudimentaire, permettant la collision et le déplacement d'un
+          joueur dans un monde en deux dimensions avec la méthode
+          <a
+            target="_blank"
+            href="https://benpm.github.io/blog/2d-top-down-collisions-with-rectangles-aabbs/#:~:text=Axis-aligned%20bounding%20boxes%20%28AABBs%29%20are%20very%20useful%20for,in%20the%20direction%20of%20the%20shortest%20intersection%20axis."
+            >'AABB'</a
+          >. 
+          <br>Pour rendre le défi encore plus complexe, j'ai choisi d'ajouter la
+          capacité au joueur de faire un saut vers l'avant, ce qui m'a obligé à
+          coder une fonctionnalité pour remettre en place le joueur même
+          lorsqu'il se déplace à une très grande vitesse, ce qui a nécessité de
+          nombreux tests supplémentaires.
+        </p>
+      </div>
+      <img id="small" src="Pong.gif" alt="Image du bloc de texte" />
+    </div>
+    <img src="Cuadrado.gif" alt="Image du bloc de texte" />
+    <div class="text-image">
+      <div>
+        <h3 id="futur">Futur</h3>
+        <p>
+          J'ai pour projet de faire un compresseur vidéo, pour pouvoir afficher
+          une vidéo simple, avec 2 couleurs et en basse résolution sur la
+          numworks.
+        </p>
+      </div>
+      <img id="small" src="3D raycasting.gif" alt="Image du bloc de texte" />
+    </div>
+
+    <footer>
+      <p>
+        Le code source de ces projets est entièrement disponible sur
+        <a
+          target="_blank"
+          href="https://github.com/DeadMall0w/C-sharp-asciil-maze"
+          >Github</a
+        >
+      </p>
+      <p>&copy; 2024 Berquier Raphaël</p>
+    </footer>
+  </body>
+</html>
