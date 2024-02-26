@@ -189,6 +189,7 @@ function update() {
 
 
 window.addEventListener('resize', function(event) {
+    alert(window.innerWidth.toString() + "x" + window.innerHeight.toString());
     clearLines();
     clearPoints();
     init();
