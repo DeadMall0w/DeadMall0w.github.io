@@ -193,12 +193,11 @@ function update() {
 
 window.addEventListener('resize', function(event) { // On mobile device, sometimes when you scroll, the resolution change a little bit
     if (Math.abs(windowWidth-window.innerWidth) <= 100 && Math.abs(windowHeight-window.innerHeight) <= 100){
-        alert("working");
         return;
     }
-    alert(window.innerWidth.toString() + "x" + window.innerHeight.toString() + "," + windowWidth.toString() + "x" + windowHeight.toString() );
     windowWidth = window.innerWidth;
     windowHeight = window.innerHeight;
+
     clearLines();
     clearPoints();
     init();
