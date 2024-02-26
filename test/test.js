@@ -1,6 +1,8 @@
-const numPoints = 100;
+const ratioPoint = 0.00004;
+const rationLine = 2;
+
 let points = [];
-const DISTANCE = 20000;
+const DISTANCE = 10000;
 let mouseLines = [];
 let lines = [];
 
@@ -11,6 +13,7 @@ function init(){
     points = [];
     mouseLines = [];
     lines = [];
+    let numPoints = parseInt(window.innerWidth * window.innerHeight * ratioPoint);
     for (let i = 0; i < numPoints; i++) {
         points.push(generatePoint());
     }
@@ -20,7 +23,8 @@ function init(){
         mouseLines[index].classList.add('mouseline');
         document.getElementById('background').appendChild(mouseLines[index]);
     }
-    for (let i = 0; i < 100; i++) {
+    let numLines = parseInt(numPoints * rationLine);
+    for (let i = 0; i < numLines; i++) {
         lines.push(document.createElement('div'));
         lines[i].classList.add('line');
         document.getElementById('background').appendChild(lines[i]);
@@ -107,6 +111,9 @@ function moveLine(lineElement, x1, y1, x2, y2) {
 }
 
 function drawLines() {
+    for (let index = 0; index < lines.length; index++) {
+        lines[index].style.display = 'none';;
+    }
     let id = 0;
     for (let i = 0; i < points.length; i++) {
         for (let j = i + 1; j < points.length; j++) {
