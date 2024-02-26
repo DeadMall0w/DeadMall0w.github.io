@@ -1,5 +1,5 @@
 const numPoints = 100;
-const points = [];
+let points = [];
 const DISTANCE = 20000;
 let mouseLines = [];
 let lines = [];
@@ -8,6 +8,13 @@ let mouseX;
 let mouseY;
 
 function init(){
+    points = [];
+    mouseLines = [];
+    lines = [];
+    for (let i = 0; i < numPoints; i++) {
+        points.push(generatePoint());
+    }
+
     for (let index = 0; index < 10; index++) {
         mouseLines.push(document.createElement('div'));
         mouseLines[index].classList.add('mouseline');
@@ -56,9 +63,24 @@ function generatePoint() {
     };
 }
 
-// Création des points
-for (let i = 0; i < numPoints; i++) {
-    points.push(generatePoint());
+function clearLines() {
+    const background = document.getElementById('background');
+    const l = background.getElementsByClassName('line');
+    while (l.length > 0) {
+        l[0].parentNode.removeChild(l[0]);
+    }
+    const ml = background.getElementsByClassName('mouseline');
+    while (ml.length > 0) {
+        ml[0].parentNode.removeChild(ml[0]);
+    }
+}
+
+function clearPoints() {
+    const background = document.getElementById('background');
+    const p = background.getElementsByClassName('point');
+    while (p.length > 0) {
+        p[0].parentNode.removeChild(p[0]);
+    }
 }
 
 // Fonction pour calculer la distance entre deux points
@@ -159,6 +181,30 @@ function update() {
 
     requestAnimationFrame(update); // Lancer la prochaine frame d'animation
 }
+
+
+window.addEventListener('resize', function(event) {
+    clearLines();
+    clearPoints();
+    init();
+});
+
+// function clearLines() {
+//     lines.forEach(line => line.remove());
+//     lines = [];
+// }
+
+// function clearPoints() {
+//     points.forEach(point => point.element.remove());
+//     points = [];
+// }
+
+function resetAnimatedBackground() {
+    clearLines();
+    clearPoints();
+    init();
+}
+
 init();
 // Lancer la première frame d'animation
 requestAnimationFrame(update);
