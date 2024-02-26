@@ -15,7 +15,20 @@
     color: rgb(255, 255, 255);
     background: #1B2432;
 }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
 /* Navigation */
 ul li {
     display: inline-block;
@@ -26,6 +39,10 @@ ul li {
     ul li {
         display: inline-block;
         width: 100%;
+    }
+
+    header {
+        display: none;
     }
 }
 
@@ -111,12 +128,6 @@ header {
     color: #fff;
     padding: 10px;
     text-align: center;
-}
-
-@media screen and (max-width: 640px) {
-    header {
-        display: none;
-    }
 }
 
 header a{
