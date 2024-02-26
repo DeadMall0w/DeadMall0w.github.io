@@ -16,22 +16,6 @@
     background: #1B2432;
 }
 
-/* Navigation */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
 /* Boutons de navigation */
 .slide-button {
     color: #fff;
