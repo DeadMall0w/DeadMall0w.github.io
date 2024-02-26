@@ -70,10 +70,32 @@ body {
     padding: 0;
     color:#fff;
     background-color: #110e1a;
-    background-image: url("img/Background.svg");
+    /* background-image: url("img/Background.svg"); */
     background-size: cover;
     background-attachment: fixed;
     background-size: 25%;
+}
+
+.point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #3D3845;
+    border-radius: 50%;
+}
+
+.line {
+    position: absolute;
+    height: 1px;
+    background-color: #1B182C;
+    pointer-events: none;
+}
+
+.mouseline {
+    position: absolute;
+    height: 1px;
+    background-color: #3f3864;
+    pointer-events: none;
 }
 
 header {
