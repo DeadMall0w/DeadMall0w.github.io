@@ -2,7 +2,7 @@ const ratioPoint = 0.00004;
 const rationLine = 2;
 
 let points = [];
-const DISTANCE = 10000;
+const DISTANCE = 15000;
 let mouseLines = [];
 let lines = [];
 
@@ -155,6 +155,13 @@ function drawMouseLines(mouseX, mouseY) {
 document.addEventListener('mousemove', function(event) {
     mouseX = event.clientX;
     mouseY = event.clientY;
+});
+
+document.addEventListener('mousemove', function(event) {
+    if(event.clientX != 0 && event.clientY != 0){
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+    }
 });
 
 
