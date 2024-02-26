@@ -3,7 +3,7 @@ mail = document.getElementById('mail');
 mail.innerText = "raphael.berquier@gmail.com"
 mail.href = "mailto:raphael.berquier@gmail.com"
 
-const ratioPoint = 0.00004;
+const ratioPoint = 0.00004; // foreach pixel there is 0.00004 point, it's a small number, but too many points can lead to lag, especially on smartphone
 const rationLine = 2;
 
 let points = [];
