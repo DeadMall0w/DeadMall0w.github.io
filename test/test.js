@@ -4,6 +4,9 @@ const DISTANCE = 20000;
 let mouseLines = [];
 let lines = [];
 
+let mouseX;
+let mouseY;
+
 function init(){
     for (let index = 0; index < 10; index++) {
         mouseLines.push(document.createElement('div'));
@@ -21,8 +24,8 @@ function init(){
 function drawPoint(x, y) {
     const point = document.createElement('div');
     point.classList.add('point');
-    point.style.left = x + 'px';
-    point.style.top = y + 'px';
+    point.style.left = x-3 + 'px';
+    point.style.top = y-3 + 'px';
     document.getElementById('background').appendChild(point);
     return point;
 }
@@ -47,8 +50,8 @@ function generatePoint() {
     return {
         x: x,
         y: y,
-        vx: (Math.random() - 0.5) * 4, // Vitesse de déplacement aléatoire en x
-        vy: (Math.random() - 0.5) * 4, // Vitesse de déplacement aléatoire en y
+        vx: (Math.random() - 0.5) * 2, // Vitesse de déplacement aléatoire en x
+        vy: (Math.random() - 0.5) * 2, // Vitesse de déplacement aléatoire en y
         element: drawPoint(x, y) // Élément DOM représentant le point
     };
 }
@@ -56,23 +59,6 @@ function generatePoint() {
 // Création des points
 for (let i = 0; i < numPoints; i++) {
     points.push(generatePoint());
-}
-
-// Fonction pour effacer les lignes entre les points
-function clearLines() {
-    const background = document.getElementById('background');
-    const lines = background.getElementsByClassName('line');
-    while (lines.length > 0) {
-        lines[0].parentNode.removeChild(lines[0]);
-    }
-}
-
-function clearPoints() {
-    const background = document.getElementById('background');
-    // const lines = background.getElementsByClassName('point');
-    // while (lines.length > 0) {
-    //     lines[0].parentNode.removeChild(lines[0]);
-    // }
 }
 
 // Fonction pour calculer la distance entre deux points
@@ -86,10 +72,16 @@ function moveLine(lineElement, x1, y1, x2, y2) {
     const dy = y2 - y1;
     const length = Math.sqrt(dx * dx + dy * dy);
     // Mettre à jour la position et la longueur de la ligne
-    lineElement.style.display = 'block';
-    lineElement.style.width = length + 'px';
-    lineElement.style.transformOrigin = '0 0';
-    lineElement.style.transform = 'translate(' + x1 + 'px, ' + y1 + 'px) rotate(' + Math.atan2(dy, dx) + 'rad)';
+    try {
+        lineElement.style.display = 'block';
+        lineElement.style.width = length + 'px';
+        lineElement.style.transformOrigin = '0 0';
+        lineElement.style.transform = 'translate(' + x1 + 'px, ' + y1 + 'px) rotate(' + Math.atan2(dy, dx) + 'rad)';
+      }
+      catch(err) {
+        console.log(err);
+      }
+    
 }
 
 function drawLines() {
@@ -132,11 +124,8 @@ function drawMouseLines(mouseX, mouseY) {
 }
 
 document.addEventListener('mousemove', function(event) {
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
-
-    // Dessiner les lignes entre la souris et les points les plus proches
-    drawMouseLines(mouseX, mouseY);
+    mouseX = event.clientX;
+    mouseY = event.clientY;
 });
 
 
@@ -163,11 +152,10 @@ function update() {
     // clearPoints()
     points.forEach(movePoint); // Déplacer les points
 
-    // Effacer les lignes précédentes
-    // clearLines();
-
     // Dessiner les lignes entre tous les points
     drawLines();
+
+    drawMouseLines(mouseX, mouseY);
 
     requestAnimationFrame(update); // Lancer la prochaine frame d'animation
 }
