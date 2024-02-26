@@ -1,3 +1,4 @@
+document.getElementById('background').appendChild(mouseLines[index]);
 const ratioPoint = 0.00004;
 const rationLine = 2;
 
