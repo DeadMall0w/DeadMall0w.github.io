@@ -14,6 +14,9 @@ let lines = [];
 let mouseX;
 let mouseY;
 
+let windowWidth = window.innerWidth;
+let windowHeight = window.innerHeight;
+
 function init(){
     points = [];
     mouseLines = [];
@@ -188,18 +191,18 @@ function update() {
 }
 
 
-window.addEventListener('resize', function(event) {
-    alert(window.innerWidth.toString() + "x" + window.innerHeight.toString());
+window.addEventListener('resize', function(event) { // On mobile device, sometimes when you scroll, the resolution change a little bit
+    if (Math.abs(windowWidth-window.innerWidth) <= 30 && Math.abs(windowHeight-window.innerHeight) <= 30){
+        windowWidth = window.innerWidth;
+        windowHeight = window.innerHeight;
+        return;
+    }
+
+    
     clearLines();
     clearPoints();
     init();
 });
-
-function resetAnimatedBackground() {
-    clearLines();
-    clearPoints();
-    init();
-}
 
 init();
 // Lancer la première frame d'animation
