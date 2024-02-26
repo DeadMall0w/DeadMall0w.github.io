@@ -1,4 +1,8 @@
-document.getElementById('background').appendChild(mouseLines[index]);
+// Ensure that my mail is not directly in html file, to avoid scrapper bots.
+mail = document.getElementById('mail');
+mail.innerText = "raphael.berquier@gmail.com"
+mail.href = "mailto:raphael.berquier@gmail.com"
+
 const ratioPoint = 0.00004;
 const rationLine = 2;
 
