@@ -33,6 +33,7 @@ nav ul li a {
 ul li {
     display: inline-block;
     width: 33%;
+    line-height: 1.6;
 }
 
 @media screen and (max-width: 640px) {
@@ -137,6 +138,10 @@ a {
     color: #7237d1;
 }
 
+#lien-jaune {
+    color: rgb(194, 197, 0);
+}
+
 h2{
     font-size: 32px;
     text-decoration: underline;
@@ -208,6 +213,10 @@ section {
 .mini-projet img {
     max-width: 100%;
     min-width: 200px;
+}
+
+.mini-projet video {
+    max-width: 300px;
 }
 
 /* .voir-projet{

@@ -166,6 +166,11 @@ section {
         max-width: 450px;
         padding-left: 70px;
     }
+    .text-image video {
+        width: auto;
+        max-width: 450px;
+        padding-left: 70px;
+    }
 
     .text-image {
         display: flex;
@@ -186,10 +191,20 @@ section {
         max-width: 800px;
         padding-left: 200px;
     }
+    .text-image video {
+        max-width: 800px;
+        padding-left: 200px;
+    }
 }
 /* Resolution below 1550px wide */
 @media screen and (max-width: 1550px) {
     .text-image img {
+        max-width: 450px;
+        width: auto;
+        padding-left: 40px;
+    }
+
+    .text-image video {
         max-width: 450px;
         width: auto;
         padding-left: 40px;
@@ -232,6 +247,12 @@ section {
 /* Resolution below 550px wide */
 @media screen and (max-width: 550px) {
     .text-image img {
+        width: 400px;
+        padding-left: 0px;
+    }
+
+
+    .text-image video {
         width: 400px;
         padding-left: 0px;
     }
