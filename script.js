@@ -156,7 +156,7 @@ document.addEventListener('mousemove', function(event) {
     mouseY = event.clientY;
 });
 
-document.addEventListener('mousemove', function(event) {
+document.addEventListener('touchmove', function(event) {
     if(event.clientX != 0 && event.clientY != 0){
         mouseX = event.clientX;
         mouseY = event.clientY;
