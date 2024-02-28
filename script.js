@@ -158,8 +158,8 @@ document.addEventListener('mousemove', function(event) {
 
 document.addEventListener('touchmove', function(event) {
     if(event.clientX != 0 && event.clientY != 0){
-        mouseX = event.clientX;
-        mouseY = event.clientY;
+        mouseX = event.touches[0].clientX;
+        mouseY = event.touches[0].clientY;
         alert(mouseX.toString() + mouseY.toString());
     }
 });
