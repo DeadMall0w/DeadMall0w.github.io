@@ -148,24 +148,6 @@ function drawLines() {
     }
 }
 
-// function drawMouseLines(mouseX, mouseY) {
-//     let id = 0;
-//     for (let index = 0; index < mouseLines.length; index++) {
-//         mouseLines[index].style.display = 'none';;
-//     }
-//     for (let i = 0; i < points.length; i++) {
-//         const point = points[i];
-//         const distance = calculateDistance({x: mouseX, y: mouseY}, point);
-//         // console.log(point, {x: mouseX, y: mouseY});
-        
-//         // Si la distance entre la souris et le point est inférieure à la distance souhaitée
-//         if (distance < DISTANCE) {
-//             moveLine(mouseLines[id], mouseX, mouseY, point.x, point.y);
-//             id+=1;
-//         }
-//     }
-// }
-
 document.addEventListener('mousemove', function(event) {
     mouseX = event.clientX;
     mouseY = event.clientY;
@@ -175,7 +157,7 @@ document.addEventListener('touchmove', function(event) {
     if(event.clientX != 0 && event.clientY != 0){
         mouseX = event.touches[0].clientX;
         mouseY = event.touches[0].clientY;
-        alert(mouseX.toString() + mouseY.toString());
+        // alert(mouseX.toString() + mouseY.toString());
     }
 });
 
@@ -201,8 +183,6 @@ function update() {
     points.forEach(movePoint); // Déplacer les points
 
     drawLines(); // Dessiner les lignes entre tous les points
-
-    // drawMouseLines(mouseX, mouseY); // Dessiner les lignes entre tous les points et la souris
 
     requestAnimationFrame(update); // Lancer la prochaine frame d'animation
 }
