@@ -114,42 +114,57 @@ function drawLines() {
         lines[index].style.display = 'none';;
     }
     let id = 0;
+
+    for (let index = 0; index < mouseLines.length; index++) {
+        mouseLines[index].style.display = 'none';;
+    }
+    let mouseId = 0;
     for (let i = 0; i < points.length; i++) {
+        const point1 = points[i];
         for (let j = i + 1; j < points.length; j++) {
-            const point1 = points[i];
             const point2 = points[j];
             const distance = calculateDistance(point1, point2);
 
             // Si la distance entre les points est inférieure à la distance souhaitée
             if (distance < DISTANCE) {
                 if (id > lines.length-1){
-                    // alert("pas asses de trait !");
+                    console.log("Il n'y a pas assez de traits !");
                     return;
                 }
                 moveLine(lines[id], point1.x, point1.y, point2.x, point2.y);
                 id+=1;
             }
         }
-    }
-}
-
-function drawMouseLines(mouseX, mouseY) {
-    let id = 0;
-    for (let index = 0; index < mouseLines.length; index++) {
-        mouseLines[index].style.display = 'none';;
-    }
-    for (let i = 0; i < points.length; i++) {
-        const point = points[i];
-        const distance = calculateDistance({x: mouseX, y: mouseY}, point);
+        const distance = calculateDistance({x: mouseX, y: mouseY}, point1);
         // console.log(point, {x: mouseX, y: mouseY});
         
         // Si la distance entre la souris et le point est inférieure à la distance souhaitée
         if (distance < DISTANCE) {
-            moveLine(mouseLines[id], mouseX, mouseY, point.x, point.y);
-            id+=1;
+            moveLine(mouseLines[mouseId], mouseX, mouseY, point1.x, point1.y);
+            mouseId+=1;
         }
+
+
     }
 }
+
+// function drawMouseLines(mouseX, mouseY) {
+//     let id = 0;
+//     for (let index = 0; index < mouseLines.length; index++) {
+//         mouseLines[index].style.display = 'none';;
+//     }
+//     for (let i = 0; i < points.length; i++) {
+//         const point = points[i];
+//         const distance = calculateDistance({x: mouseX, y: mouseY}, point);
+//         // console.log(point, {x: mouseX, y: mouseY});
+        
+//         // Si la distance entre la souris et le point est inférieure à la distance souhaitée
+//         if (distance < DISTANCE) {
+//             moveLine(mouseLines[id], mouseX, mouseY, point.x, point.y);
+//             id+=1;
+//         }
+//     }
+// }
 
 document.addEventListener('mousemove', function(event) {
     mouseX = event.clientX;
@@ -165,7 +180,6 @@ document.addEventListener('touchmove', function(event) {
 });
 
 
-// Fonction pour déplacer un point avec des mouvements fluides
 function movePoint(point) {
     // Déplacer le point en tenant compte de ses vitesses de déplacement
     point.x += point.vx;
@@ -184,13 +198,11 @@ function movePoint(point) {
 }
 
 function update() {
-    // clearPoints()
     points.forEach(movePoint); // Déplacer les points
 
-    // Dessiner les lignes entre tous les points
-    drawLines();
+    drawLines(); // Dessiner les lignes entre tous les points
 
-    drawMouseLines(mouseX, mouseY);
+    // drawMouseLines(mouseX, mouseY); // Dessiner les lignes entre tous les points et la souris
 
     requestAnimationFrame(update); // Lancer la prochaine frame d'animation
 }
