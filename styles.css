@@ -216,7 +216,8 @@ section {
 }
 
 .mini-projet video {
-    max-width: 300px;
+    max-height: 350px;
+    /* width: 350px; */
 }
 
 /* .voir-projet{
