@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Berquier Raphaël - Ascii-Maze</title>
-    <link rel="stylesheet" href="../template.css" />
+    <link rel="stylesheet" href="../styles-project.css" />
   </head>
   <body>
-    <!-- Header -->
+    <div id="background"></div>
     <header>
       <nav>
         <ul>
@@ -43,7 +43,10 @@
             '@', les pièces par '$' et les murs par des caractères pleins.
           </p>
         </div>
-        <img src="Gameplay.gif" alt="Image du bloc de texte" />
+        <video autoplay loop muted>
+          <source src="Gameplay/gameplay.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge la lecture de vidéos.
+        </video>
       </div>
     </section>
 
@@ -77,7 +80,10 @@
           soient générées.
         </p>
       </div>
-      <img id="small" src="Maze.gif" alt="Image du bloc de texte" />
+      <video id="small" autoplay loop muted>
+        <source src="Maze generation/Maze.mp4" type="video/mp4" />
+        Votre navigateur ne prend pas en charge la lecture de vidéos.
+      </video>
     </div>
 
     <div class="text-image">
@@ -101,7 +107,10 @@
           Wolfenstein.
         </p>
       </div>
-      <img id="small" src="3D raycasting.gif" alt="Image du bloc de texte" />
+      <video id="small" autoplay loop muted>
+        <source src="3D raycasting/3D-raycasting.mp4" type="video/mp4" />
+        Votre navigateur ne prend pas en charge la lecture de vidéos.
+      </video>
     </div>
 
     <footer>
@@ -115,5 +124,6 @@
       </p>
       <p>&copy; 2024 Berquier Raphaël</p>
     </footer>
+    <script src="../../script.js"></script>
   </body>
 </html>
