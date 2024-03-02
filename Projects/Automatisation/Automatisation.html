@@ -4,7 +4,7 @@
     <link rel="icon" href="../img/icon.png" type="image/png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Berquier Raphaël - Ascii-Maze</title>
+    <title>Berquier Raphaël - Automatisation</title>
     <link rel="stylesheet" href="../styles-project.css" />
   </head>
   <body>
@@ -20,18 +20,25 @@
               >Mes projets</a
             >
           </li>
-          <li><a class="slide-button" href="#difficultes">Difficultés</a></li>
+          <li><a class="slide-button" href="#devoirs">Devoirs</a></li>
           <li><a class="slide-button" href="#futur">Futur</a></li>
         </ul>
       </nav>
     </header>
 
     <section id="accueil">
-      <h2>Ascii-Maze</h2>
+      <h2>Automatisation</h2>
       <div class="text-image">
         <div>
           <p>
-            Grace a des langages comme python et .bat j'ai pu automatiser certaine taches du quotidien.
+            Au fil du temps, j'ai développé une série de projets visant à
+            automatiser divers aspects de ma routine, que ce soit pour
+            économiser du temps, simplifier des tâches répétitives ou encore
+            apprendre de nouveaux langages de programmation.<br />
+            <br />
+            Notamment, j'ai créé un programme permettant de copier
+            automatiquement un dossier vers un autre dossier ou espace de
+            stockage en ligne (cloud).
           </p>
         </div>
         <video autoplay loop muted>
@@ -43,74 +50,54 @@
 
     <div class="text-image">
       <div>
-        <h3 id="difficultes">Difficultés</h3>
+        <h3 id="devoirs">Mes devoirs</h3>
         <p>
-          Créer un labyrinthe procéduralement et l'afficher uniquement en ASCII
-          a posé de nombreux problèmes, notamment en ce qui concerne le
-          clignotement. Chaque frame était un message dans la console,
-          supprimant ainsi l'ancien et pouvant causer des clignotements. Ce
-          problème a été résolu en envoyant un premier message et en le mettant
-          à jour pour chaque frame, ce qui a éliminé l'effet de clignotement.
+          À l'aide de l'API, j'ai développé un script qui récupère
+          automatiquement mes devoirs. J'ai également utilisé le formatage
+          Markdown, me permettant de les afficher soit en liste de tâches
+          (todo), soit en liste Kanban (ci-dessous). De plus, j'ai automatisé le
+          fonctionnement de ce script pour qu'il se lance automatiquement à la
+          fin des cours. En cas d'absence de devoirs sur l'ENT (Environnement
+          Numérique de Travail), je peux également ajouter manuellement des
+          tâches. <br />
           <br />
-          <br />
-          De plus, la génération du labyrinthe a suscité une grande réflexion,
-          car chaque section du labyrinthe devait être reliée, y compris la
-          sortie. C'est pourquoi j'ai utiliser une version l'algorithme de
-          <a
-            target="_blank"
-            href="https://en.wikipedia.org/wiki/Depth-first_search"
-            >Depth First Search.</a
-          >
-          <br />
-          <br />
-          Cet algorithme fonctionne en explorant autant en profondeur que
-          possible un chemin aléatoire jusqu'à ce qu'il atteigne une impasse.
-          Ensuite, il fait demi-tour jusqu'à la dernière intersection sans
-          impasse et explore ensuite les autres chemins non explorés. Ce
-          processus se répète jusqu'à ce que toutes les sections du labyrinthe
-          soient générées.
+          J'ai également intégré ce programme à l'API Discord, permettant ainsi
+          à toute ma classe d'accéder plus rapidement à leurs devoirs, présentés
+          dans un format plus clair et organisé.
         </p>
       </div>
-      <video id="small" autoplay loop muted>
+      <!-- <video id="small" autoplay loop muted>
         <source src="Maze generation/Maze.mp4" type="video/mp4" />
-        Votre navigateur ne prend pas en charge la lecture de vidéos.
-      </video>
+        Votre navigateur ne prend pas en charge la lecture de vidéos. -->
+      <!-- </video> -->
+      <img src="Devoirs.png" />
     </div>
 
     <div class="text-image">
       <div>
         <h3 id="futur">Futur</h3>
         <p>
-          J'aimerais étendre davantage le défi en transformant un ancien projet
-          de labyrinthe réalisé en 3D avec Python avec la bibliothèque 'pygame',
-          pour ensuite l'afficher en utilisant uniquement des caractères ASCII.
-          Ce projet utilise la technique de
-          <a target="_blank" href="https://fr.wikipedia.org/wiki/Raycasting"
-            >'RayCasting'</a
-          >, qui consiste à envoyer plusieurs traits (Ray), à calculer les
-          distances et à afficher la hauteur du mur en conséquence.
-          <br />
-          <br />
-          Le raycasting présente de nombreux avantages, tels que sa facilité
-          d'implémentation et son faible coût en ressources, cependant, il est
-          très limité dans ce qu'il peut afficher. C'est pourquoi il a été
-          principalement utilisé pour les premiers jeux 3D tels que Doom ou
-          Wolfenstein.
+          J'aimerais automatiser encore plus de partie de ma vie, afin de me
+          faire gagner plus de temps au quotidien. Actuellement, je travaille
+          sur une série de scripts qui me permettent de modifier efficacement de
+          nombreux fichiers au format markdown. <br />
+          Ces scripts offrent notamment la possibilité de renommer des fichiers
+          en masse en fonction de leur date de création ou de modification. De
+          plus, je peux modifier des titres présents sur plusieurs fichiers,
+          ajouter des templates ou effectuer d'autres types de modifications de
+          manière rapide et efficace.
         </p>
       </div>
-      <video id="small" autoplay loop muted>
-        <source src="3D raycasting/3D-raycasting.mp4" type="video/mp4" />
-        Votre navigateur ne prend pas en charge la lecture de vidéos.
-      </video>
     </div>
 
     <footer>
       <p>
-        Le code source de ce projet est entièrement disponible sur
-        <a
-          target="_blank"
-          href="https://github.com/DeadMall0w/C-sharp-asciil-maze"
-          >Github</a
+        Le code source de ces projet sont entièrement disponible sur github :
+        <a target="_blank" href="https://github.com/DeadMall0w/Backup-python"
+          >sauvegarde automatique</a
+        >,
+        <a target="_blank" href="https://github.com/DeadMall0w/Devoir-ENT"
+          >devoris automatique</a
         >
       </p>
       <p>&copy; 2024 Berquier Raphaël</p>
