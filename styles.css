@@ -36,7 +36,7 @@ ul li {
     line-height: 1.6;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1600px) {
     ul li {
         display: inline-block;
         width: 100%;
@@ -44,6 +44,12 @@ ul li {
 
     header {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    ul li {
+        line-height: 1.4;
     }
 }
 
