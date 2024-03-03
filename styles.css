@@ -244,6 +244,10 @@ section {
 
 }
 
+#a-propos {
+    margin: 30px 100px 50px 100px;
+}
+
 
 /* effet de vague */
 #wave-section {
@@ -312,5 +316,7 @@ section {
 
 
 footer {
+    margin-top: 20px;
+    padding-bottom: 0px;
     text-align: center;
 }
