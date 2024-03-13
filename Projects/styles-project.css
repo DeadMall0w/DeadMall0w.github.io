@@ -158,6 +158,18 @@ section {
 
 #small {
     max-width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+#independant {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    padding-top: 40px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -187,6 +199,11 @@ section {
         max-width: 450px;
     }
 
+    #independant {
+        padding-top: 10px;
+        width: 850px;
+    }
+
     .text-image img {
         max-width: 800px;
         padding-left: 200px;
@@ -195,6 +212,7 @@ section {
         max-width: 800px;
         padding-left: 200px;
     }
+
 }
 /* Resolution below 1550px wide */
 @media screen and (max-width: 1550px) {
