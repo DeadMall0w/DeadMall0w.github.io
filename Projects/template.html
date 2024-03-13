@@ -1,63 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <link rel="icon" href="img/icon.png" type="image/png" />
+  <head>
+    <link rel="icon" href="../img/icon.png" type="image/png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nom du Projet - Berquier Raphaël</title>
-    <link rel="stylesheet" href="test_template.css" />
-</head>
-<body>
-    <!-- Header -->
+    <title>Berquier Raphaël - Jeux Vidéo</title>
+    <link rel="stylesheet" href="../styles-project.css" />
+  </head>
+  <body>
+    <div id="background"></div>
     <header>
-        <nav>
-          <ul>
-            <li>
-              <a class="slide-button" href="#parcours-scolaire"
-                >Parcours Scolaire</a
-              >
-            </li>
-            <li><a class="slide-button" href="#projets">Projets</a></li>
-            <li><a class="slide-button" href="#a-propos">À Propos</a></li>
-            <li><a class="slide-button" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+      <nav>
+        <ul>
+          <li><a class="slide-button" href="../../index.html">Retour</a></li>
+          <li><a class="slide-button" href="../../index.html#projets">Jeux vidéo</a></li>
+          <li><a class="slide-button" href="#difficultes">Difficultés</a></li>
+          <li><a class="slide-button" href="#futur">Futur</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- Contenu du projet -->
     <section id="accueil">
-        <div class="text">
-            <h2>Nom du Projet</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque dui vitae risus ultrices, ac efficitur mi molestie. Integer tincidunt interdum justo, eu commodo lacus. Fusce vel ex in enim euismod iaculis. Integer at accumsan elit. Phasellus nec scelerisque justo. Aenean commodo purus nec velit vulputate, nec suscipit risus mattis. Praesent vitae ligula accumsan, ullamcorper mi nec, tempus ex. Morbi a sodales lacus. Donec sollicitudin, libero eu bibendum commodo, metus nibh mollis ex, a viverra orci dolor non quam. Mauris interdum dapibus libero, eu ultricies eros dictum nec.
-            </p>
+      <h2>Jeux</h2>
+      <div class="text-image">
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            pariatur dolore praesentium. Autem quis temporibus earum velit! Sint
+            animi laudantium autem eligendi, qui minima ducimus! Fuga voluptas
+            mollitia corrupti repellat!
+          </p>
         </div>
-
-        <!-- <img src="img/Celeste.jfif" alt="Image du projet" /> -->
-        <div class="text-image">
-            <div >
-                <h3>Titre du Bloc de Texte</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque dui vitae risus ultrices, ac efficitur mi molestie. Integer tincidunt interdum justo, eu commodo lacus. Fusce vel ex in enim euismod iaculis. Integer at accumsan elit. Phasellus nec scelerisque justo. Aenean commodo purus nec velit vulputate, nec suscipit risus mattis. Praesent vitae ligula accumsan, ullamcorper mi nec, tempus ex.
-                </p>
-            </div>
-            <img src="img/Celeste.jfif" alt="Image du bloc de texte" />
-        </div>
+        <video autoplay loop muted>
+          <source src="" type="video/mp4" />
+          Votre navigateur ne prend pas en charge la lecture de vidéos.
+        </video>
+      </div>
     </section>
 
+    <div class="text-image">
+      <div>
+        <h3 id="difficultes">Difficultés</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+          dolore maiores eligendi sapiente reprehenderit id, ex rerum soluta
+          similique odit facere nobis placeat perspiciatis, blanditiis autem
+          eius necessitatibus voluptate vel!
+        </p>
+      </div>
+      <video id="small" autoplay loop muted>
+        <source src="" type="video/mp4" />
+        Votre navigateur ne prend pas en charge la lecture de vidéos.
+      </video>
+    </div>
 
     <div class="text-image">
-        <div >
-            <h3>Titre du Bloc de Texte</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque dui vitae risus ultrices, ac efficitur mi molestie. Integer tincidunt interdum justo, eu commodo lacus. Fusce vel ex in enim euismod iaculis. Integer at accumsan elit. Phasellus nec scelerisque justo. Aenean commodo purus nec velit vulputate, nec suscipit risus mattis. Praesent vitae ligula accumsan, ullamcorper mi nec, tempus ex.
-            </p>
-        </div>
-        <img src="img/Sync.gif" alt="Image du bloc de texte" />
+      <div>
+        <h3 id="futur">Futur</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto,
+          iusto omnis. Mollitia ipsa maxime illo eligendi quae? Quo alias
+          numquam, explicabo ducimus libero ex eos iste, ea, reiciendis dolor
+          quos!
+        </p>
+      </div>
+      <video id="small" autoplay loop muted>
+        <source src="" type="video/mp4" />
+        Votre navigateur ne prend pas en charge la lecture de vidéos.
+      </video>
     </div>
 
     <footer>
-        <p>&copy; 2023 Berquier Raphaël</p>
+      <!-- <p>
+        Le code source de ce projet est entièrement disponible sur
+        <a
+          target="_blank"
+          href="https://github.com/DeadMall0w/C-sharp-asciil-maze"
+          >Github</a
+        >
+      </p> -->
+      <p>&copy; 2024 Berquier Raphaël</p>
     </footer>
-</body>
+    <script src="../../script.js"></script>
+  </body>
 </html>
