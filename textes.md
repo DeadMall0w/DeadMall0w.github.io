@@ -72,7 +72,7 @@ M'améliorer en développement WEB, surtout en JavaScript.
 ### difficultés
 Coder un jeu de plateau,avec le JavaScript.
 
-Creer des règles pour avoir un jeu agréable et qui repose sur la stratégie et l'anticipation.
+Créer des règles pour avoir un jeu agréable et qui repose sur la stratégie et l'anticipation.
 
 ### futur de projet
 Essayer de coder une ia, qui joue bien et qui peux battre des joueurs non expérimentés.
@@ -112,9 +112,9 @@ Tous les éléments affichés a l'écran sont des caractères Ascii.
 > ce que ca m'a apporté
 
 ### difficultés
-Creer un labyrinthe proceduralement, en pouvant aller partout.
-L'affichage en ascii a poser de nombreux problème comme le clignotement, lorque le joueur posé.
-Reduire la portée de vue.
+Créer un labyrinthe procéduralement, en pouvant aller partout.
+L'affichage en Ascii a poser de nombreux problème comme le clignotement, lorsque le joueur posé.
+Réduire la portée de vue.
 
 ### futur de projet
 J'aimerais étendre plus loin le défis et faire un jeu en 3D toujours avec des caractères Ascii, en utilisant des techniques de raycasting utiliser pour les 1ers jeux 3D comme Doom ou Wolfenstein.
@@ -133,7 +133,7 @@ listes de jeux
 - trucs avec les ias qui se battent(ia)
 - Cuadrado (lien du play store)(processus de publication de jeu)
 - Roule le rat (lien pour tester le jeu), ce jeu est toujours en développement, je ne suis pas le seul a réaliser ce jeu
-- Platormer 2D (toujours en développement)
+- Platformer 2D (toujours en développement)
 
 ### but
 > ce que ca m'a apporté 
@@ -143,4 +143,4 @@ Apprendre un logiciel complexe
 
 ### futur de projet
 - Roule le rat
-- jeu avec mon couz
+- jeu avec mon cousin

@@ -72,7 +72,7 @@ function clearLines() {
     while (l.length > 0) {
         l[0].parentNode.removeChild(l[0]);
     }
-    const ml = background.getElementsByClassName('mouseline');
+    const ml = background.getElementsByClassName('mouseine');
     while (ml.length > 0) {
         ml[0].parentNode.removeChild(ml[0]);
     }
