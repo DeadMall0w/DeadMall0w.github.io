@@ -45,7 +45,7 @@
           J'ai débuté en codant un algorithme de heightmap, qui transforme une texture en un maillage en 3 dimensions. <br> 
           Dans ces textures, le blanc correspond aux points les plus hauts et le noir aux points les plus bas.  <br>
            <br>
-          Par la suite, j'ai étendu cette méthode en utilisant un algorithme de Perlin noise pour générer cette heightmap.  <br>
+          Par la suite, j'ai étendu cette méthode en utilisant un algorithme de Perlin Noise pour générer cette heightmap.  <br>
           <br>
           Enfin, j'ai mis en œuvre la création de multiples "chunks" (petits fragments de la carte), facilitant ainsi la génération de vastes cartes de manière efficace. <br>
         </p>
@@ -84,6 +84,19 @@
       <img src="image2.png" alt="">
     </div>
     <img id="small" src="texture.png" alt="">
+    <div class="text-image">
+      <div>
+        <h2 id="iland">Île</h2>
+        <p>
+          En utilisant un masque approprié sur la heightmap, il est possible de générer une île de la taille souhaitée, comme illustré dans l'image. <br>
+          <br>
+          Ce masque détermine les zones où la hauteur est ajustée pour créer les contours de l'île, permettant ainsi de contrôler précisément sa forme et sa taille. <br>
+          <br>
+          En modifiant le masque, on peut aussi rajouter des rivières manuellement ou des montagnes si on veut un plus grand contrôle sur l'île créé.
+        </p>
+      </div>
+      <img src="small-Iland.png" alt="">
+    </div>
     <div class="text-image">
       <div>
         <h2 id="futur">Futur</h2>
