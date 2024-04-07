@@ -161,6 +161,7 @@ section {
     text-align: center;
 }
 
+
 #accueil {
     background-color: #ffffff00;
     padding-top: 200px;
@@ -320,4 +321,10 @@ footer {
     margin-top: 20px;
     padding-bottom: 0px;
     text-align: center;
+}
+
+#small {
+    padding-top: 20px;
+    height: 600px; /* Changer la largeur selon vos besoins */
+    width: auto; /* Pour conserver le ratio original */
 }
