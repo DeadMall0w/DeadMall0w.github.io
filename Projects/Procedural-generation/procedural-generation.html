@@ -58,32 +58,38 @@
     </video>
     <div class="text-image">
       <div>
-        <h2 id="futur">Cuadrado</h2>
+        <h2 id="experimentation">Expérimentation</h2>
         <p>
-          J'ai également développé un jeu de puzzle pour la calculatrice. Le but
-          de ce jeu est de remplir le plus de cases possible sans revenir en
-          arrière. À chaque lancement du jeu, la carte est générée de manière
-          aléatoire. J'ai entièrement programmé ce jeu sur la calculatrice en
-          1h30, sans utiliser d'ordinateur ni d'accès à Internet. Il s'inspire
-          fortement d'un jeu disponible sur le
-          <a
-            target="_blank"
-            href="https://play.google.com/store/apps/details?id=com.deltagamedev.cuadrado"
-            >Play Store</a
-          >
-          que j'ai créé avec des amis.
+          J'ai exploré un système de maillage plus novateur en utilisant l'algorithme "marching cube", permettant la génération de grottes et de cavernes. <br>
+           <br>
+          Cela a donné un effet de "marches", moins réaliste mais plus innovant. <br>
+          <br>
+           Par la suite, j'ai expérimenté la technique de "smoothing" pour éliminer ces marches, mais le résultat était moins intéressant 
+           car il était plus conventionnel et couramment utilisé dans les jeux. <br>
         </p>
       </div>
-      <video id="small" autoplay loop muted>
-        <source src="Cuadrado/Cuadrado.mp4" type="video/mp4" />
-        Votre navigateur ne prend pas en charge la lecture de vidéos.
-      </video>
+      <img src="image1.png" alt="">
     </div>
+    <div class="text-image">
+      <div>
+        <h2 id="colors">Couleurs</h2>
+        <p>
+          Par la suite, j'ai intégré un algorithme permettant de changer le matériau du maillage à des emplacements définis de manière procédurale par l'algorithme. <br>
+          <br>
+           Par exemple, le sol est vert, avec des variations plus sombres à certains endroits, et en haut des montagnes, une couleur blanche est appliquée. <br> 
+           <br>
+           Ensuite, j'ai remplacé ces couleurs par des textures pour obtenir un rendu plus réaliste.
+        </p>
+      </div>
+      <img src="image2.png" alt="">
+    </div>
+    <img id="small" src="texture.png" alt="">
     <div class="text-image">
       <div>
         <h2 id="futur">Futur</h2>
         <p>
-          J'aimerai utiliser la technique dite de "wave function collapse", permettant des résultats différents de l'algorithme de noise utilisé précedement, cela me permettrait de générer des villes entieres des maniere procédural.
+          J'aimerai utiliser la technique dite de "wave function collapse", permettant des résultats différents de l'algorithme de noise utilisé précédemment, cela me permettrait de générer des villes entières des manière procédurale.
+          J'aimerai aussi tester pour utiliser plusieurs coeur du processeur, permettant de générerer le monde beaucoup plus rapidement et sans causer de bug, permettant ainsi de générer le monde en meme que le joueur se déplace, pour que le monde soit infini.
         </p>
       </div>
       <video id="small" autoplay loop muted>
