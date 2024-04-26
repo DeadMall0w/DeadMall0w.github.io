@@ -32,7 +32,7 @@ function init(){
 
     for (let index = 0; index < 10; index++) {
         mouseLines.push(document.createElement('div'));
-        mouseLines[index].classList.add('mouseline');
+        mouseLines[index].classList.add('mouseLine');
         document.getElementById('background').appendChild(mouseLines[index]);
     }
     let numLines = parseInt(numPoints * rationLine);
@@ -72,7 +72,7 @@ function clearLines() {
     while (l.length > 0) {
         l[0].parentNode.removeChild(l[0]);
     }
-    const ml = background.getElementsByClassName('mouseine');
+    const ml = background.getElementsByClassName('mouseLine');
     while (ml.length > 0) {
         ml[0].parentNode.removeChild(ml[0]);
     }

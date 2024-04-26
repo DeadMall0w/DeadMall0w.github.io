@@ -146,7 +146,7 @@ p {
     pointer-events: none;
 }
 
-.mouseline {
+.mouseLine {
     position: absolute;
     height: 1px;
     background-color: #3f3864;
