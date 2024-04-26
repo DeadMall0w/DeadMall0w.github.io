@@ -8,10 +8,11 @@ try {
 }
 
 const ratioPoint = 0.00004; // foreach pixel there is 0.00004 point, it's a small number, but too many points can lead to lag, especially on smartphone
-const rationLine = 2;
+const rationLine = 2; // Foreach point there is 2 lines created
+const DISTANCE = 15000;
+const MOUSELINENUMBER = 10;
 
 let points = [];
-const DISTANCE = 15000;
 let mouseLines = [];
 let lines = [];
 
@@ -21,20 +22,27 @@ let mouseY;
 let windowWidth = window.innerWidth;
 let windowHeight = window.innerHeight;
 
+// First function called
 function init(){
+    // initialize variables
     points = [];
     mouseLines = [];
     lines = [];
+
+    // Create all points
     let numPoints = parseInt(window.innerWidth * window.innerHeight * ratioPoint);
     for (let i = 0; i < numPoints; i++) {
         points.push(generatePoint());
     }
 
-    for (let index = 0; index < 10; index++) {
+    // Create mouseLines 
+    for (let index = 0; index < MOUSELINENUMBER; index++) {
         mouseLines.push(document.createElement('div'));
         mouseLines[index].classList.add('mouseLine');
         document.getElementById('background').appendChild(mouseLines[index]);
     }
+
+    // Create line (links between points)
     let numLines = parseInt(numPoints * rationLine);
     for (let i = 0; i < numLines; i++) {
         lines.push(document.createElement('div'));
