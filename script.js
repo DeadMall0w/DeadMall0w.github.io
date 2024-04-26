@@ -7,7 +7,7 @@ try {
     
 }
 
-const ratioPoint = 0.00004; // foreach pixel there is 0.00004 point, it's a small number, but too many points can lead to lag, especially on smartphone
+const ratioPoint = 0.00004; // foreach pixel there is 0.00004 point, it's a small number, but too many points can lead to lag, especially on mobile device
 const rationLine = 2; // Foreach point there is 2 lines created
 const DISTANCE = 15000;
 const MOUSELINENUMBER = 10;
@@ -29,20 +29,24 @@ function init(){
     mouseLines = [];
     lines = [];
 
+    /*
+    For optimization purposes, a fixed number of lines is pre-created before they are drawn. So each frame, lines are just moved to link points, and if there are too many, they are hidden.
+    This can cause, if there are too many points to link, to not have enough lines. But this is practically unnoticeable and is worth it for performance (especially on mobile devices).
+    */
     // Create all points
     let numPoints = parseInt(window.innerWidth * window.innerHeight * ratioPoint);
     for (let i = 0; i < numPoints; i++) {
         points.push(generatePoint());
     }
 
-    // Create mouseLines 
+    // Create fixed number mouseLines (used to link mouse and points) 
     for (let index = 0; index < MOUSELINENUMBER; index++) {
         mouseLines.push(document.createElement('div'));
         mouseLines[index].classList.add('mouseLine');
         document.getElementById('background').appendChild(mouseLines[index]);
     }
 
-    // Create line (links between points)
+    // Create line (links between points)  according to the ratioLine.
     let numLines = parseInt(numPoints * rationLine);
     for (let i = 0; i < numLines; i++) {
         lines.push(document.createElement('div'));
@@ -51,7 +55,7 @@ function init(){
     }
 }
 
-// Fonction pour afficher un point
+
 function drawPoint(x, y) {
     const point = document.createElement('div');
     point.classList.add('point');
@@ -136,7 +140,7 @@ function drawLines() {
             // Si la distance entre les points est inférieure à la distance souhaitée
             if (distance < DISTANCE) {
                 if (id > lines.length-1){
-                    console.log("Il n'y a pas assez de traits !");
+                    console.log("There ins't enough lines !");
                     return;
                 }
                 moveLine(lines[id], point1.x, point1.y, point2.x, point2.y);
@@ -144,7 +148,6 @@ function drawLines() {
             }
         }
         const distance = calculateDistance({x: mouseX, y: mouseY}, point1);
-        // console.log(point, {x: mouseX, y: mouseY});
         
         // Si la distance entre la souris et le point est inférieure à la distance souhaitée
         if (distance < DISTANCE) {
@@ -171,11 +174,11 @@ document.addEventListener('touchmove', function(event) {
 
 
 function movePoint(point) {
-    // Déplacer le point en tenant compte de ses vitesses de déplacement
+    // Add points velocity to the point position
     point.x += point.vx;
     point.y += point.vy;
 
-    // Rebondir sur les bords de l'écran
+    // Allow points to bounce of at the edge of the screen
     if (point.x < 0 || point.x > window.innerWidth) {
         point.vx *= -1;
     }
@@ -187,12 +190,13 @@ function movePoint(point) {
     point.element.style.top = point.y + 'px';
 }
 
+// Called each frame
 function update() {
-    points.forEach(movePoint); // Déplacer les points
+    points.forEach(movePoint); // move all points present in the screen
 
-    drawLines(); // Dessiner les lignes entre tous les points
+    drawLines(); // Draw lines between points and mouse
 
-    requestAnimationFrame(update); // Lancer la prochaine frame d'animation
+    requestAnimationFrame(update); // Start the function "update" for the next frame
 }
 
 
@@ -203,13 +207,19 @@ window.addEventListener('resize', function(event) { // On mobile device, sometim
     windowWidth = window.innerWidth;
     windowHeight = window.innerHeight;
 
+    // Clear all lines and points
     clearLines();
     clearPoints();
+
+    // Restart the simulation
     init();
 });
 
+
+// Start the simulation
 init();
-// Lancer la première frame d'animation
+
+// Called a first time the function "update", that will be called every frame.
 requestAnimationFrame(update);
 
 
