@@ -1,20 +1,25 @@
+/* Importation de polices */
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
+/* Variables globales */
 :root {
     --couleur-fond-principale: #0d001f;
     --couleur-fond-secondaire: #2d0033;
     --couleur-fond-sombre: #191717;
 }
-/* Selection du texte */
-::-moz-selection { /** Pour firefox */
+
+/* Sélection du texte */
+::-moz-selection { /** Pour Firefox */
     color: rgb(255, 255, 255);
     background: #1B2432;
 }
-  
+
 ::selection {
     color: rgb(255, 255, 255);
     background: #1B2432;
 }
+
+/* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -29,28 +34,11 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
 }
-/* Navigation */
+
 ul li {
     display: inline-block;
     width: 33%;
     line-height: 1.6;
-}
-
-@media screen and (max-width: 1600px) {
-    ul li {
-        display: inline-block;
-        width: 100%;
-    }
-
-    header {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    ul li {
-        line-height: 1.4;
-    }
 }
 
 /* Boutons de navigation */
@@ -87,19 +75,19 @@ ul li {
     color:#000;
 }
 
-/* corps de la page */
+/* Corps de la page */
 body {
     font-family: 'Comfortaa', 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     color:#fff;
     background-color: #110e1a;
-    /* background-image: url("img/Background.svg"); */
     background-size: cover;
     background-attachment: fixed;
     background-size: 25%;
 }
 
+/* Éléments de fond */
 #background {
     position: fixed;
     top: 0;
@@ -108,6 +96,7 @@ body {
     height: 100%;
     z-index: -1;
 }
+
 .point {
     position: absolute;
     width: 6px;
@@ -130,6 +119,7 @@ body {
     pointer-events: none;
 }
 
+/* En-tête */
 header {
     background-color: var(--couleur-fond-sombre);
     color: #fff;
@@ -140,6 +130,7 @@ header {
 header a{
     padding: 10px;
 }
+
 a {
     color: #7237d1;
 }
@@ -148,20 +139,21 @@ a {
     color: rgb(194, 197, 0);
 }
 
-h2{
+h2 {
     font-size: 32px;
     text-decoration: underline;
     color: #ffffff;
     margin: 0;
 }
 
+/* Sections */
 section {
     position: relative;
     overflow: hidden;
     text-align: center;
 }
 
-
+/* Section "Accueil" */
 #accueil {
     background-color: #ffffff00;
     padding-top: 200px;
@@ -170,7 +162,7 @@ section {
 }
 
 @media screen and (max-width: 750px) {
-    h2{
+    h2 {
         font-size: 24px;
     }
     #accueil {
@@ -180,32 +172,36 @@ section {
     }
 }
 
+/* Section "Parcours Scolaire" */
 #parcours-scolaire {
     background-color: #ffffff00;
     padding: 40px;
 }
-
 
 #projets p, #parcours-scolaire p {
     font-size: 16px;
     color: #666; 
 }
 
-
-/* projets */
+/* Section "Projets" */
 #projets {
     background-color: #07070798;
     padding: 40px;
-
 }
 
 #projets img {
-    max-width: 50%; /* Ajuste la largeur de l'image comme vous le souhaitez */
+    max-width: 50%;
 }
 
 #projets p {
-    margin-left: 20px; /* Espace entre l'image et le texte */
+    margin-left: 20px;
     padding-bottom: 60px;
+}
+
+#small {
+    padding-top: 20px;
+    height: 600px;
+    width: auto;
 }
 
 /* Projets en grille */
@@ -224,34 +220,21 @@ section {
 
 .mini-projet video {
     max-height: 350px;
-    /* width: 350px; */
 }
 
-/* .voir-projet{
-    padding: 0px;
-    background-color: #2d0033;
-    margin: 0px;
-} */
-/* .description {
-    margin: 0px;
-    background-color: #d13737;
-} */
-
-/* Média query pour les écrans de petite taille (par exemple, smartphones) */
 @media screen and (max-width: 750px) {
     .mini-projets {
         grid-template-columns: none;
     }
-
 }
 
+/* À propos */
 #a-propos {
     font-size: 20px;
     margin: 30px 100px 50px 100px;
 }
 
-
-/* effet de vague */
+/* Effet de vague */
 #wave-section {
     padding: 20px;
     pointer-events: none;
@@ -301,8 +284,9 @@ section {
 .waveHome .shape-fill {
     fill: var(--couleur-fond-sombre);
 }
+
 .waveBottom, .waveTop .shape-fill {
-    fill: #07070798;;
+    fill: #07070798;
 }
 
 @media screen and (max-width: 1200px) {
@@ -316,15 +300,9 @@ section {
     }
 } 
 
-
+/* Pied de page */
 footer {
     margin-top: 20px;
     padding-bottom: 0px;
     text-align: center;
-}
-
-#small {
-    padding-top: 20px;
-    height: 600px; /* Changer la largeur selon vos besoins */
-    width: auto; /* Pour conserver le ratio original */
 }
