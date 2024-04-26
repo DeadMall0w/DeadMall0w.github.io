@@ -75,7 +75,7 @@ ul li {
     color:#000;
 }
 
-/* Corps de la page */
+/* Corps et éléments de la page */
 body {
     font-family: 'Comfortaa', 'Courier New', Courier, monospace;
     margin: 0;
@@ -86,6 +86,40 @@ body {
     background-attachment: fixed;
     background-size: 25%;
 }
+
+a {
+    color: #7237d1;
+    text-shadow: none;
+}
+
+h2 {
+    font-size: 32px;
+    text-decoration: underline;
+    color: #ffffff;
+    margin: 0;
+    text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h3 {
+    text-shadow:
+    2px 2px 0 #000000;
+}
+
+p {
+    text-shadow:
+    2px 2px 0 #000000;
+}
+
+#projets p, #parcours-scolaire p {
+    font-size: 16px;
+    color: #666;
+    text-shadow: none;
+}
+
 
 /* Éléments de fond */
 #background {
@@ -131,21 +165,6 @@ header a{
     padding: 10px;
 }
 
-a {
-    color: #7237d1;
-}
-
-#lien-jaune {
-    color: rgb(194, 197, 0);
-}
-
-h2 {
-    font-size: 32px;
-    text-decoration: underline;
-    color: #ffffff;
-    margin: 0;
-}
-
 /* Sections */
 section {
     position: relative;
@@ -178,9 +197,8 @@ section {
     padding: 40px;
 }
 
-#projets p, #parcours-scolaire p {
-    font-size: 16px;
-    color: #666; 
+#lien-jaune {
+    color: rgb(194, 197, 0);
 }
 
 /* Section "Projets" */
