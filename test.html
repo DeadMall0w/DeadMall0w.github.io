@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Berquier Raphael</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div>
+    <button onclick="changeLanguage('fr')">Français</button>
+    <button onclick="changeLanguage('en')">English</button>
+  </div>
+  
+  <h1 id="title"></h1>
+  <p id="content"></p>
+
+  <script>
+    async function changeLanguage(lang) {
+        //Load file containing all changeable elements
+
+        const changeFile = await fetch("Content/contents.txt");
+        const content = await changeFile.text();
+        const changes = content.split("\r\n"); // To remove "retour chariot"
+        
+        const response = await fetch("Content/"+lang + '.json');
+        const texts = await response.json();
+
+        console.log(texts["title"]);
+        for (let i = 0; i < changes.length; i++) {
+
+            const name = changes[i];
+            document.getElementById(name).innerText = texts[name];
+            
+        }
+    }
+    
+    //Load default language
+    changeLanguage('fr');
+  </script>
+</body>
+</html>
