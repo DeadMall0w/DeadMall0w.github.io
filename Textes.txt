@@ -1,24 +1,14 @@
-I'llTODO :
+TODO :
 Refaire l'espace "Mes projets"
-Faire tous les projets et mini projets
-Faire mieux le contact
-Faire le truc en bas
-Faire les autres sites pour les projets 
-Faire les templates
-Faire des images ou des gifs pour les images
-Trouver tous les projets
-Refaire tous les textes et ajouter des catégories
+Proposer une option pour mettre en anglais
+Améliorer l'affichage sur smartphone
+Tester l'affichage sur une tablette
+Mettre à jour mes projets
+Mettre à jour mon profil, rajouter une image ?
+Nettoyer un peu le code et supprimer ce qui est inutile
+Ajouter un lien vers mon CV
+Affichage dans un CLI ?
 
-
-projets
--génération procédural
--Jeu multijoueur ?
-
-Autres projets:
--projets python
--mes projets d'automatisation
--Ascii maze
--Jeux sur le plays store
 
 
 
