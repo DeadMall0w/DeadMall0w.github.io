@@ -7,9 +7,9 @@ try {
     
 }
 
-const ratioPoint = 0.00004; // foreach pixel there is 0.00004 point, it's a small number, but too many points can lead to lag, especially on mobile device
+const ratioPoint = 0.00005; // foreach pixel there is 0.00005 point, it's a small number, but too many points can lead to lag, especially on mobile device
 const rationLine = 2; // Foreach point there is 2 lines created
-const DISTANCE = 15000;
+const DISTANCE = 30000;
 const MOUSELINENUMBER = 10;
 
 let points = [];

@@ -4,38 +4,76 @@
   <meta charset="UTF-8">
   <title>Berquier Raphael</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="teststyles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div>
-    <button onclick="changeLanguage('fr')">Français</button>
-    <button onclick="changeLanguage('en')">English</button>
-  </div>
-  
-  <h1 id="title"></h1>
-  <p id="content"></p>
+    <div id="background"></div>
 
-  <script>
-    async function changeLanguage(lang) {
-        //Load file containing all changeable elements
-
-        const changeFile = await fetch("Content/contents.txt");
-        const content = await changeFile.text();
-        const changes = content.split("\r\n"); // To remove "retour chariot"
-        
-        const response = await fetch("Content/"+lang + '.json');
-        const texts = await response.json();
-
-        console.log(texts["title"]);
-        for (let i = 0; i < changes.length; i++) {
-
-            const name = changes[i];
-            document.getElementById(name).innerText = texts[name];
-            
-        }
-    }
+    <div id="content">
+        <section id="welcome">
+            <p id="welcomeText">
+                Hi ! <br />
+                I'm Raphaël, <br />
+                First year student at IG2I.
+            </p>
+            <div id="welcomeImage">
+                <img src="img/light_bulb_off.png" alt="Your Image" />
+            </div>
+        </section>
     
-    //Load default language
-    changeLanguage('fr');
-  </script>
+        <section id="parcours-scolaire">
+            <h2>Parcours Scolaire</h2>
+            <ul>
+            <li class="without-dot">
+                <h3>Lycée Edouard Branly 2021 - 2024</h3>
+                <p>
+                2024 - <a target="_blank" href="https://www.cambridgeenglish.org/fr/exams-and-tests/first/">Concours Cambridge First certifcate (B2)</a><br />
+                2024 - Participation aux <a target="_blank" href="https://www.education.gouv.fr/le-concours-general-des-lycees-et-des-metiers-un-prix-d-excellence-10022"> concours généraux</a> de NSI et Maths<br />
+                2024 - Participation aux prix <a target="_blank" href="https://www.tropheestangente.com/PTL2024.php"> tangente</a> et <a target="_blank" href="https://www.sciencespourtous.org/prix-du-livre-sciences-pour-tous/">sience pour tous</a><br />
+                2021-2024 - SI Euro (Science de l'ingénieur en Anglais) <br />
+                2023 - Participation aux <a href="https://www.education.gouv.fr/les-olympiades-nationales-de-mathematiques-5732" target="_blank" class="lien-rouge" >"Olympiades de mathématiques"</a><br />
+                2021-2022 - Option science de l'ingénieur
+                </p>
+            </li>
+            <li>
+                <h3>Collège Paul Eluard 2016 - 2021</h3>
+                <p>
+                2019-2021 - Option LCE (Langue et Culture Européenne) <br />
+                2020 - Participation avec mon équipe à : <a href="https://www.lesmotsenor.org/" target="_blank" id="lien-jaune" >"Les Mots en Or"</a><br />
+                2018-2021 - Option Latin<br />
+                2016 - Participation au <a target="_blank" href="https://fr.wikipedia.org/wiki/Conseil_municipal_d%27enfants">Conseil Municipal</a> des Enfants de ma commune
+                </p>
+            </li>
+            </ul>
+        </section>
+
+    </div>
+    
+    <div id="sidebar">
+        <div id="lightBulb" class="sidebar-item">
+            <img id="lightBulbIMG" src="img/light_bulb_off.png" alt="Icône Lumière Éteinte" class="icon">
+            <span id="lightBulbTEXT" class="text">Mode sombre</span>
+        </div>
+        <div class="sidebar-item">
+            <span class="text">FR</span>
+        </div>
+        <div class="sidebar-item">
+            <span class="text">EN</span>
+        </div>
+        <div class="sidebar-item">
+            <img src="img/light_bulb_off.png" alt="Icône Lumière Éteinte" class="icon">
+            <!-- <span class="text">Mode sombre</span> -->
+        </div>
+        <div class="sidebar-item">
+            <img src="img/light_bulb_off.png" alt="Icône Lumière Éteinte" class="icon">
+            <!-- <span class="text">Mode sombre</span> -->
+        </div>
+    </div>
+
+
+    <script src="sidebarInteraction.js"></script>
+    <script src="translation.js"></script>
+    <script src="background.js"></script>
 </body>
 </html>
