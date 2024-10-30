@@ -149,24 +149,59 @@ section {
 /* Section "welcome" */
 #welcome {
     background-color: #ffffff00;
-    padding: 40px;
     font-size: 20px;
     display: flex; /* Utilisation de Flexbox */
     align-items: center; /* Centre verticalement les éléments */
 }
 
-#welcome p{
+
+#welcomeText {
+    margin-right: 20px;
     padding-left: 70px;
     padding-top: 230px;
     font-size: 50px;
     line-height: 80px;
 }
 
-#welcomeText {
-    margin-right: 20px; /* Ajoute de l'espace entre le texte et l'image */
+#terminal {
+    border: 3px solid #1b1b1b;
+    margin-top: 200px;
+    margin-left: 100px;
+    height: 400px;
+    width: 900px;
+    overflow-y: auto;
+    background-color: #1818188c;
+    font-family: 'Consolas', Courier, monospace;
 }
 
-#welcomeImage {
-    width: 100px; /* Ajustez la largeur selon vos besoins */
-    height: auto; /* Maintient les proportions de l'image */
+
+.command 
+{
+    padding-left: 10px;
+    margin: 7px 0px;
+    font-size: 15px;
+    line-height: 30px;
+    background-color: #181818;
+}
+
+#terminal-header 
+{
+    background-color: #1b1b1b;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+terminal-input {
+    width: 100%;
+    border: none;
+    background: none;
+    color: #ffffff;
+    outline: none;
+    font-size: 16px;
 }
