@@ -172,6 +172,7 @@ section {
     overflow-y: auto;
     background-color: #1818188c;
     font-family: 'Consolas', Courier, monospace;
+    position:relative;
 }
 
 
@@ -182,6 +183,23 @@ section {
     font-size: 15px;
     line-height: 30px;
     background-color: #181818;
+}
+
+#input 
+{
+    width: 96%;
+    position: absolute;
+    bottom: 0;
+    bottom: 0;
+    padding-left: 10px;
+
+    margin: 7px 0px;
+    font-size: 18px;
+    line-height: 30px;
+    color:white;
+    background-color: #2b2b2b;
+    font-family: 'Consolas', Courier, monospace;
+    border: none;
 }
 
 #terminal-header 
@@ -197,11 +215,3 @@ section {
 
 }
 
-terminal-input {
-    width: 100%;
-    border: none;
-    background: none;
-    color: #ffffff;
-    outline: none;
-    font-size: 16px;
-}
