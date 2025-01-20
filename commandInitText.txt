@@ -1,0 +1,4 @@
+Running 'ls ~/skills'... 
+[wait 3]
+Listing complete. 
+Too many to count!
