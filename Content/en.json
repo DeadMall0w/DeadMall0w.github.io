@@ -1,4 +1,3 @@
 {
-    "title": "Hello, welcome to our website!",
-    "content": "This content is in English."
+    "welcomeText": "Hi ! <br /> I'm <b class=\"rainbow-text\">Raphaël</b>, <br /> First year student at IG2I."
 }

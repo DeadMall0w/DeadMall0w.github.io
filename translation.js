@@ -1,5 +1,6 @@
 async function changeLanguage(lang) {
     //Load file containing all changeable elements
+    console.log("Changing language...")
 
     const changeFile = await fetch("Content/contents.txt");
     const content = await changeFile.text();
