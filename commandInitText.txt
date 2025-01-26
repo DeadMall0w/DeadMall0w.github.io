@@ -1,4 +1,10 @@
 Running 'ls ~/skills'... 
-[wait 3]
-Listing complete. 
+[[wait]]
+[###-------] 30%
+[[wait]]
+[######----] 50%
+[[wait]]
+[##########] 100%
+[[wait]]
+Listing not done. 
 Too many to count!

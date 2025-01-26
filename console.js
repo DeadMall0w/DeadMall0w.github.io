@@ -47,5 +47,44 @@ async function executeAfterWait() {
 async function LoadInitText()
 {
     //TODO: RANDOM PART
+
+    const file = await fetch("commandInitText.txt");
+    const content = await file.text();
+    const lines = content.split("\r\n"); // To remove "retour chariot"
+
+    for (let index = 0; index < lines.length; index++) {
+        if (lines[index].length >= 2){
+            if (lines[index][0]=='[' && lines[index][1] == '[')
+            {
+                if (CompareArguments(lines[index], "wait"))
+                {
+                    await wait(500); // Wait for 4 seconds
+                }
+                continue;
+            }
+        }
+        ShowLine(lines[index]);   
+    }
 }
+
+
+
+function CompareArguments(arg1, arg2)
+{
+    if(arg1.length - 4 != arg2.length){
+        return false;
+    }
+
+    for (let index = 0; index < arg2.length; index++) {
+        if(arg1[index+2]!=arg2[index])
+        {
+            return false;
+        }
+        
+    }
+    return true;
+}
+
+
+LoadInitText();
 // executeAfterWait();
