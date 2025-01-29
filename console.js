@@ -45,7 +45,7 @@ async function LoadInitText()
     //TODO: RANDOM PART
     const files = await fetch("Content/InitTexts/commandInitText.txt");
     const content = await files.text();
-    const filesName = content.split("\r\n"); // To remove "retour chariot"
+    const filesName = content.split(":"); // To remove "retour chariot"
 
     let r = getRandomInt(filesName.length);
 
