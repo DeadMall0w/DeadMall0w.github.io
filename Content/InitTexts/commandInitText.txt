@@ -1,1 +1,3 @@
-ls_skills.txt:smile.txt:booting_skills.txt
+ls_skills.txt
+smile.txt
+booting_skills.txt

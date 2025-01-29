@@ -51,6 +51,7 @@ async function LoadInitText()
 
     const file = await fetch("Content/InitTexts/" + filesName[r]);
     const commands = await file.text();
+    console.log(JSON.stringify(commands));
     const lines = commands.split("\r"); // To remove "retour chariot"
 
     
