@@ -8,7 +8,12 @@
     --line-color:#9b97a1;
     --mouse-line-color:#1b1b1b;
 
-    --title-bar: 181818;
+    --title-bar:#373b41;
+    --input-container:#373b41;
+    --input-field:#c5c8c6;
+    --command:#181818;
+    --command-background:#1d1f21;
+    --border-color:#373b41;
 
 
 }
@@ -219,9 +224,9 @@ section {
 
   .terminal {
     position: relative;
-    background-color: #1d1f21;
+    background-color: var(--command-background);
     color: #c5c8c6;
-    border: 2px solid #373b41;
+    border: 2px solid var(--border-color);
     border-radius: 5px;
     width: 600px;
     height: 400px;
@@ -234,7 +239,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #373b41; 
+    background-color: var(--title-bar); 
     padding: 5px;
     height: 25px;
 }
@@ -258,6 +263,7 @@ section {
     align-items: center;
     padding: 5px;
     background-color: #373b41;
+    background-color: var(--input-container);
     height: 35px;
   }
   
@@ -269,7 +275,7 @@ section {
     background-color: transparent;
     border: none;
     outline: none;
-    color: #c5c8c6;
+    color: var(--input-field);
     font-family: 'Cascadia Code','Courier New', Courier, monospace;
     font-size: 16px;
     width: 100%;
@@ -281,7 +287,7 @@ section {
     margin-top: 5px;
     font-size: 15px;
     line-height: 30px;
-    background-color: #181818;
+    background-color: var(--command);
     font-family: 'Cascadia Code','Courier New', Courier, monospace;
 }
 

@@ -6,10 +6,12 @@ const lineColor = ["#1B182C", "#9b97a1"];
 const mouseLineColor = ["#3D3845", "#1b1b1b"];
 // Console :
 
-const titleBar = ["#373b41"]
+const titleBar = ["#373b41", "#000000"]
 const inputContainer = ["#373b41"]
 const inputField = ["#c5c8c6"]
 const command = ["#181818"]
+const commandBackground = ["#1d1f21"]
+const borderColor = ["#373b41"]
 
 
 
@@ -72,6 +74,13 @@ function switchColorMode() {
     document.documentElement.style.setProperty('--point-color', pointColor[themeIndex]);
     document.documentElement.style.setProperty('--line-color', lineColor[themeIndex]);
     document.documentElement.style.setProperty('--mouse-line-color', mouseLineColor[themeIndex]);
+   
+    document.documentElement.style.setProperty('--title-bar', titleBar[themeIndex]);
+    document.documentElement.style.setProperty('--input-container', inputContainer[themeIndex]);
+    document.documentElement.style.setProperty('--input-field', inputField[themeIndex]);
+    document.documentElement.style.setProperty('--command', command[themeIndex]);
+    document.documentElement.style.setProperty('--command-background', commandBackground[themeIndex]);
+    document.documentElement.style.setProperty('--border-color', borderColor[themeIndex]);
     
 }
 
