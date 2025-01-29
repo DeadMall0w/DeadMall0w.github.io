@@ -1,17 +1,18 @@
 let themeIndex = 1;
-const bgColor = ["#131116", "#f1f1f1"];
+const bgColor = ["#131116", "#E6EDED"];
 const textColor = ["#FFF", "#000"];
 const pointColor = ["#3D3845", "#3e3c41"];
 const lineColor = ["#1B182C", "#9b97a1"];
 const mouseLineColor = ["#3D3845", "#1b1b1b"];
 // Console :
 
-const titleBar = ["#373b41", "#000000"]
-const inputContainer = ["#373b41"]
-const inputField = ["#c5c8c6"]
-const command = ["#181818"]
-const commandBackground = ["#1d1f21"]
-const borderColor = ["#373b41"]
+const titleBar = ["#373b41", "#C1C2CC"]
+const inputContainer = ["#373b41", "#C1C2CC"]
+const inputField = ["#c5c8c6", "#323232"]
+const command = ["#181818", "#8E8E96"]
+const commandBackground = ["#1d1f21", "#A5A5AF"]
+const borderColor = ["#373b41", "#C1C2CC"]
+const fontColor = ["#c5c8c6", "#323232"]
 
 
 
@@ -81,6 +82,7 @@ function switchColorMode() {
     document.documentElement.style.setProperty('--command', command[themeIndex]);
     document.documentElement.style.setProperty('--command-background', commandBackground[themeIndex]);
     document.documentElement.style.setProperty('--border-color', borderColor[themeIndex]);
+    document.documentElement.style.setProperty('--font-color-terminal', fontColor[themeIndex]);
     
 }
 
