@@ -46,14 +46,14 @@ async function LoadInitText()
     const files = await fetch("Content/InitTexts/commandInitText.txt");
     const content = await files.text();
     console.log(JSON.stringify(content))
-    const filesName = content.split(":"); // To remove "retour chariot"
+    const filesName = content.split("\n"); // To remove "retour chariot"
 
     let r = getRandomInt(filesName.length);
 
     const file = await fetch("Content/InitTexts/" + filesName[r]);
     const commands = await file.text();
     // console.log(JSON.stringify(commands));
-    const lines = commands.split("\n\n"); // To remove "retour chariot"
+    const lines = commands.split("\n"); // To remove "retour chariot"
 
     
     let color = 0; // 0 : no color, 1 : green, 2 : red, 3 : yellow, TODO : ADD MORE COLORS
