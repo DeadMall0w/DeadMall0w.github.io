@@ -45,13 +45,14 @@ async function LoadInitText()
     //TODO: RANDOM PART
     const files = await fetch("Content/InitTexts/commandInitText.txt");
     const content = await files.text();
+    console.log(JSON.stringify(content))
     const filesName = content.split(":"); // To remove "retour chariot"
 
     let r = getRandomInt(filesName.length);
 
     const file = await fetch("Content/InitTexts/" + filesName[r]);
     const commands = await file.text();
-    console.log(JSON.stringify(commands));
+    // console.log(JSON.stringify(commands));
     const lines = commands.split("\n\n"); // To remove "retour chariot"
 
     
