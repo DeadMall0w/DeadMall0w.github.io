@@ -1,0 +1,11 @@
+Booting up skills...
+[[wait]]
+[###-------] 30%
+[[wait]]
+[######----] 60%
+[[wait]]
+[##########] 100%
+[[wait]]
+[[green]]
+Success! 
+Ready to impress!

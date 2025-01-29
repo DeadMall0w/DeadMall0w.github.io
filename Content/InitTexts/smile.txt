@@ -1,0 +1,12 @@
+Downloading your happiness...
+[[wait]]
+[###-------] 30%
+[[wait]]
+[######----] 60%
+[[wait]]
+[##########] 100%
+[[wait]]
+[[green]]
+Done! 
+Too many to count!
+Smile guaranteed!

@@ -10,64 +10,75 @@ function ClearConsole()
     }
 }
 
-function ShowLine(text)
-{
+function ShowLine(text, color)
+{   
    const para = document.createElement("p");
     const node = document.createTextNode(text);
     para.appendChild(node);
     const element = document.getElementById("commandsContainer");
     para.classList.add("command");
+    //? Use a switch ?
+    if (color == 1)
+    {
+        para.classList.add("green");
+    }else if(color == 2)
+    {
+        para.classList.add("red");
+    }
     element.appendChild(para);
 }
 
 ClearConsole();
-/*
-ShowLine("Hello, world !");
-ShowLine("Hello, world !");
-ShowLine("Hello, world !");
-ShowLine("Hello, world !");
-ShowLine("Hello, world !");
-ShowLine("Hello, world !");
-ShowLine("Hello, world !");
-ShowLine("Hello, world !");
-ShowLine("Hello, world !");*/
-
 
 function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function executeAfterWait() {
-    await wait(4000); // Wait for 4 seconds
-    console.log("4 seconds have passed!");
-    ShowLine("Done !");
-}
-
-
 async function LoadInitText()
 {
     //TODO: RANDOM PART
+    const files = await fetch("Content/InitTexts/commandInitText.txt");
+    const content = await files.text();
+    const filesName = content.split("\r\n"); // To remove "retour chariot"
 
-    const file = await fetch("commandInitText.txt");
-    const content = await file.text();
-    const lines = content.split("\r\n"); // To remove "retour chariot"
+    let r = getRandomInt(filesName.length);
 
+    const file = await fetch("Content/InitTexts/" + filesName[r]);
+    const commands = await file.text();
+    const lines = commands.split("\r\n"); // To remove "retour chariot"
+
+    
+    let color = 0; // 0 : no color, 1 : green, 2 : red, 3 : yellow, TODO : ADD MORE COLORS
     for (let index = 0; index < lines.length; index++) {
         if (lines[index].length >= 2){
             if (lines[index][0]=='[' && lines[index][1] == '[')
-            {
+                {
                 if (CompareArguments(lines[index], "wait"))
                 {
-                    await wait(500); // Wait for 4 seconds
+                    await wait(getRandomIntInRange(300, 1200));
+                }else if (CompareArguments(lines[index], "green"))
+                {
+                    color = 1;
+                }else if (CompareArguments(lines[index], "red"))
+                {
+                    color = 2;
                 }
                 continue;
             }
         }
-        ShowLine(lines[index]);   
+        console.log(color);
+        ShowLine(lines[index], color);  
+        color = 0; // reset color 
     }
 }
 
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  } 
 
+  function getRandomIntInRange(min, max) {
+    return min + Math.floor(Math.random() * (max+min));
+  } 
 
 function CompareArguments(arg1, arg2)
 {

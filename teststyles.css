@@ -253,3 +253,14 @@ section {
     background-color: #181818;
     font-family: 'Cascadia Code','Courier New', Courier, monospace;
 }
+
+/* Consoles prints color */
+.green 
+{
+    color: green;
+}
+
+.red 
+{
+    color:red;
+}

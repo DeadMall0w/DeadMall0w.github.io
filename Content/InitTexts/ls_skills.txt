@@ -2,9 +2,10 @@ Running 'ls ~/skills'...
 [[wait]]
 [###-------] 30%
 [[wait]]
-[######----] 50%
+[######----] 60%
 [[wait]]
 [##########] 100%
 [[wait]]
+[[red]]
 Listing not done. 
 Too many to count!
