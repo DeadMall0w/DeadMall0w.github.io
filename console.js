@@ -1,6 +1,3 @@
-const delay = ms => new Promise(res => setTimeout(res, ms));
-
-
 function ClearConsole()
 {
     const elements = document.getElementsByClassName("command");
@@ -66,7 +63,6 @@ async function LoadInitText()
                 continue;
             }
         }
-        console.log(color);
         ShowLine(lines[index], color);  
         color = 0; // reset color 
     }

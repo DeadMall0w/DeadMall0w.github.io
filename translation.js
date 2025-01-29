@@ -1,3 +1,5 @@
+defaultLanguage = "en";
+
 async function changeLanguage(lang) {
     //Load file containing all changeable elements
     console.log("Changing language...")
@@ -20,4 +22,5 @@ async function changeLanguage(lang) {
 }
 
 //Load default language
-changeLanguage('fr');
+ChangeLanguageSideBar(defaultLanguage);
+changeLanguage(defaultLanguage);

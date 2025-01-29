@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
+/* TODO : add <a> */
 :root {
     --bg-color:#f1f1f1;
     --text-color:#686868;
     --point-color:#3e3c41;
     --line-color:#9b97a1;
     --mouse-line-color:#1b1b1b;
+
+    --title-bar: 181818;
+
 
 }
 
@@ -50,6 +54,7 @@ ul li { /* remove dots of list*/
     flex: 1;
 }
 
+/* Sidebar */
 #sidebar {
     position: fixed;
     top: 0;
@@ -72,7 +77,33 @@ ul li { /* remove dots of list*/
     align-items: left;
     justify-content: flex-start;
     padding: 20px 15px;
+    padding-top: 5px;
     cursor: pointer;
+}
+
+/* Elements of the sidebar */
+#lightBulb
+{
+    margin-bottom: 30px;
+}
+
+#lightBulbTEXT
+{
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#french-translation-text, #english-translation-text
+{
+    padding-left: 15px;
+}
+.not-selectable
+{
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 .icon {
@@ -203,7 +234,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #373b41;
+    background-color: #373b41; 
     padding: 5px;
     height: 25px;
 }
