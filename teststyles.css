@@ -39,7 +39,6 @@ a {
 
 h1 {
     font-size: 36px;
-    text-decoration: underline;
     color: var(--text-color);
     margin: 0;
     text-shadow:
@@ -53,6 +52,15 @@ ul li { /* remove dots of list*/
     display: inline-block;
     width: 33%;
     line-height: 1.6;
+}
+
+.parcours{
+    vertical-align: top;
+}
+
+#parcours-scolaire
+{
+    padding-top:30px;
 }
 
 .content {
