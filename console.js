@@ -51,7 +51,7 @@ async function LoadInitText()
 
     const file = await fetch("Content/InitTexts/" + filesName[r]);
     const commands = await file.text();
-    const lines = commands.split("\r\n"); // To remove "retour chariot"
+    const lines = commands.split("\n"); // To remove "retour chariot"
 
     
     let color = 0; // 0 : no color, 1 : green, 2 : red, 3 : yellow, TODO : ADD MORE COLORS

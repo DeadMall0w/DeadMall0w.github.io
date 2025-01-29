@@ -35,8 +35,6 @@ const englishTranslationImage = document.getElementById('english-translation-ima
 const englishTranslation = document.getElementById('english-translation');
 const englishTranslationText = document.getElementById('english-translation-text');
 
-console.log(englishTranslation);
-
 function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
