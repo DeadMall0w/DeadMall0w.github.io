@@ -14,7 +14,8 @@ const commandBackground = ["#1d1f21", "#A5A5AF"]
 const borderColor = ["#373b41", "#C1C2CC"]
 const fontColor = ["#c5c8c6", "#323232"]
 
-
+// sidebar :
+const sidebarColor = ["#333", "#BCBCBC"];
 
 const hoverElement = document.getElementById('sidebar');
 
@@ -72,10 +73,12 @@ function switchColorMode() {
     document.documentElement.style.setProperty('--bg-color', bgColor[themeIndex]);
     document.documentElement.style.setProperty('--text-color', textColor[themeIndex]);
 
+    // animated bg
     document.documentElement.style.setProperty('--point-color', pointColor[themeIndex]);
     document.documentElement.style.setProperty('--line-color', lineColor[themeIndex]);
     document.documentElement.style.setProperty('--mouse-line-color', mouseLineColor[themeIndex]);
    
+    // console
     document.documentElement.style.setProperty('--title-bar', titleBar[themeIndex]);
     document.documentElement.style.setProperty('--input-container', inputContainer[themeIndex]);
     document.documentElement.style.setProperty('--input-field', inputField[themeIndex]);
@@ -84,6 +87,9 @@ function switchColorMode() {
     document.documentElement.style.setProperty('--border-color', borderColor[themeIndex]);
     document.documentElement.style.setProperty('--font-color-terminal', fontColor[themeIndex]);
     
+    //sidebar
+    document.documentElement.style.setProperty('--sidebar-color', sidebarColor[themeIndex]);
+
 }
 
 function ChangeLanguageSideBar(language)

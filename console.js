@@ -1,3 +1,12 @@
+let inputFieldConsole = document.getElementById("input-field")
+
+inputFieldConsole.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        ShowLine(">"+inputFieldConsole.value);
+        inputFieldConsole.value = "";
+    }
+});
+
 function ClearConsole()
 {
     const elements = document.getElementsByClassName("command");

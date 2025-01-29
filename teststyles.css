@@ -14,7 +14,9 @@
     --command:#181818;
     --command-background:#1d1f21;
     --border-color:#373b41;
+    --font-color-terminal:#c5c8c6;
 
+    --sidebar-color:#333;
 
 }
 
@@ -66,7 +68,7 @@ ul li { /* remove dots of list*/
     left: 0;
     width: 60px;
     height: 100vh;
-    background-color: #333;
+    background-color: var(--sidebar-color);
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -225,7 +227,7 @@ section {
   .terminal {
     position: relative;
     background-color: var(--command-background);
-    color: #c5c8c6;
+    color: var(--font-color-terminal);
     border: 2px solid var(--border-color);
     border-radius: 5px;
     width: 600px;
@@ -262,16 +264,16 @@ section {
       display: flex;
     align-items: center;
     padding: 5px;
-    background-color: #373b41;
     background-color: var(--input-container);
     height: 35px;
   }
   
   .prompt {
     margin-right: 5px;
+    font-family: 'Cascadia Code','Courier New', Courier, monospace;
 }
   
-.input-field {
+#input-field {
     background-color: transparent;
     border: none;
     outline: none;
