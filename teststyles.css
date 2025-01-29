@@ -301,6 +301,26 @@ section {
     font-family: 'Cascadia Code','Courier New', Courier, monospace;
 }
 
+
+
+#about-me-container {
+    display: flex;
+    align-items: center;
+}
+
+#photo-profil {
+    width: 550px;
+    height: auto;
+    margin-right: 30px;
+}
+
+#about-me-text {
+    font-size: 19px;
+    margin-left: 50px;
+    margin-right: 100px;
+    flex: 1
+}
+
 /* Consoles prints color */
 .green 
 {
