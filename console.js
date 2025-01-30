@@ -57,10 +57,10 @@ async function LoadInitText()
     let lines;
     if (commands.includes("\r")) // depend if it uses LF or CRLF
     {
-        lines = commands.split("\n"); // To remove "retour chariot" on github page
+        lines = commands.split("\r\n"); // To remove "retour chariot" on local host
     }else
     {
-        const lines = commands.split("\r\n"); // To remove "retour chariot" on local host
+        lines = commands.split("\n"); // To remove "retour chariot" on github page
     }
 
 
