@@ -53,7 +53,16 @@ async function LoadInitText()
     const file = await fetch("Content/InitTexts/" + filesName[r]);
     const commands = await file.text();
     // console.log(JSON.stringify(commands));
-    const lines = commands.split("\n"); // To remove "retour chariot"
+    
+    let lines;
+    if (commands.includes("\r")) // depend if it uses LF or CRLF
+    {
+        lines = commands.split("\n"); // To remove "retour chariot" on github page
+    }else
+    {
+        const lines = commands.split("\r\n"); // To remove "retour chariot" on local host
+    }
+
 
     
     let color = 0; // 0 : no color, 1 : green, 2 : red, 3 : yellow, TODO : ADD MORE COLORS
@@ -63,6 +72,7 @@ async function LoadInitText()
                 {
                 if (CompareArguments(lines[index], "wait"))
                 {
+                    console.log("wait...");
                     await wait(getRandomIntInRange(300, 1200));
                 }else if (CompareArguments(lines[index], "green"))
                 {
