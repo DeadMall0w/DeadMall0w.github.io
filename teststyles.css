@@ -302,6 +302,7 @@ section {
 }
 
 
+/* About me section */
 
 #about-me-container {
     display: flex;
@@ -321,13 +322,37 @@ section {
     flex: 1
 }
 
+/*  Projects section */
+
+
+.projects-text {
+    font-size: 19px;
+    margin-left: 50px;
+    margin-right: 100px;
+    flex: 1
+}
+
+
+#projects
+{
+    background-color: #00000049;
+    margin-left: 0px;
+    padding-left: 100px;
+    margin-top: 60px;
+}
+
+
 /* Consoles prints color */
 .green 
 {
     color: green;
-}
+} 
 
 .red 
 {
     color:red;
 }
+
+
+/* Waves */
+    
