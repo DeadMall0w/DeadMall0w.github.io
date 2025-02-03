@@ -353,8 +353,8 @@ section {
 #projects-container
 {
     display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Trois colonnes, chaque colonne occupe un tiers de la largeur */
-  grid-gap: 10px; /* Espace entre les éléments de la grille */ 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; 
 }
 
 #projects-container > div
