@@ -2,3 +2,5 @@ welcomeText
 school-career-title
 ig2i-title
 projets-title
+project-text-procedural-world
+project-text-mobile-game

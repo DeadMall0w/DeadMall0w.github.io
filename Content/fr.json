@@ -2,5 +2,7 @@
     "welcomeText": "Bonjour ! <br /> Je suis <b class=\"rainbow-text\" >Raphaël</b>, <br /> Etudiant en première année à l'IG2I.",
     "school-career-title": "Parcours scolaire",
     "ig2i-title": "IG2I - Centrale Lille 2024 - 2029",
-    "projets-title": "Mes projects"
+    "projets-title": "Mes projects",
+    "project-text-procedural-world": "Création de mondes infinis de manière totalement procédurale et automatique à l'aide du moteur graphique Unity.",
+    "project-text-mobile-game": "Grande variété de jeux vidéo tous codé avec Unity, allant de la 2D à la 3D jusqu'a l'implémentation de multijoueur, chacun proposant une expérience unique et représentant un défi technique."   
 }

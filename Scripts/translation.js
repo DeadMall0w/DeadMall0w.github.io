@@ -1,4 +1,4 @@
-defaultLanguage = "en";
+defaultLanguage = "fr";
 
 async function ChangeLanguage(lang) {
     console.log("Changing language to " + lang);
