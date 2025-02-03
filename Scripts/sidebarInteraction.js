@@ -113,13 +113,13 @@ function ChangeLanguageSideBar(language)
 
 
 frenchTranslation.addEventListener('click', function() {
-    changeLanguage("fr");
+    ChangeLanguage("fr");
     ChangeLanguageSideBar("fr"); 
 });
 
 
 englishTranslation.addEventListener('click', function() {
-    changeLanguage("en");    
+    ChangeLanguage("en");    
     ChangeLanguageSideBar("en");
 });
 

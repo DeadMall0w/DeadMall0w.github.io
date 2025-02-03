@@ -1,13 +1,10 @@
 defaultLanguage = "en";
 
-async function changeLanguage(lang) {
-    //Load file containing all changeable elements
-    console.log("Changing language...")
+async function ChangeLanguage(lang) {
+    console.log("Changing language to " + lang);
 
-    const changeFile = await fetch("Content/contents.txt");
-    const content = await changeFile.text();
-    const changes = content.split("\n"); // To remove "retour chariot"
-    
+    const changes = await ReadAndCutFile("Content/contents.txt");
+
     const response = await fetch("Content/" + lang + '.json');
     const texts = await response.json();
 
@@ -24,4 +21,4 @@ async function changeLanguage(lang) {
 
 //Load default language
 ChangeLanguageSideBar(defaultLanguage);
-changeLanguage(defaultLanguage);
+ChangeLanguage(defaultLanguage);

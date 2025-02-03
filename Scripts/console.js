@@ -10,7 +10,7 @@ inputFieldConsole.addEventListener("keydown", function(event) {
     }
 });
 
-async function loadFunctions()
+async function LoadFunctions()
 {
     const files = await fetch("Content/Commands/commands.txt");
     const content = await files.text();
@@ -76,27 +76,9 @@ function wait(ms) {
 
 async function LoadInitText()
 {
-    const files = await fetch("Content/InitTexts/commandInitText.txt");
-    const content = await files.text();
-    console.log(JSON.stringify(content))
-    const filesName = content.split("\n"); // To remove "retour chariot"
-
-    let r = getRandomInt(filesName.length);
-
-    const file = await fetch("Content/InitTexts/" + filesName[r]);
-    const commands = await file.text();
-    // console.log(JSON.stringify(commands));
-    
-    let lines;
-    if (commands.includes("\r")) // depend if it uses LF or CRLF
-    {
-        lines = commands.split("\r\n"); // To remove "retour chariot" on local host
-    }else
-    {
-        lines = commands.split("\n"); // To remove "retour chariot" on github page
-    }
-
-
+    const filesName = await ReadAndCutFile("Content/InitTexts/commandInitText.txt");
+    const r = getRandomInt(filesName.length);
+    const lines = await ReadAndCutFile("Content/InitTexts/" + filesName[r]);
     
     let color = 0; // 0 : no color, 1 : green, 2 : red, 3 : yellow, TODO : ADD MORE COLORS
     for (let index = 0; index < lines.length; index++) {
@@ -122,14 +104,6 @@ async function LoadInitText()
     }
 }
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  } 
-
-  function getRandomIntInRange(min, max) {
-    return min + Math.floor(Math.random() * (max+min));
-  } 
-
 function CompareArguments(arg1, arg2)
 {
     if(arg1.length - 4 != arg2.length){
@@ -146,6 +120,6 @@ function CompareArguments(arg1, arg2)
     return true;
 }
 
-loadFunctions();
+LoadFunctions();
 LoadInitText();
 // executeAfterWait();
