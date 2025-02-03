@@ -1,5 +1,4 @@
 A faire : 
-- Faire les fonctions helper (lire un fichier, diviser un fichier, ect...)
 - Terminer le site en global (version beta)
 - Faire la traduction en francais et en anglais (faire prompte pour demande la langue la premiere fois ? comme pour les cookies en bas)
 - Refaire la page de tous les projets (et refaire les liens)
@@ -7,6 +6,7 @@ A faire :
 - Refaire les petits trucs gadgets (lien mot en or, en doré, ect...)
 - Refaire la page de tous les projets (voir faire un viewer.js comme pour le markdown to html)
 - Terminer tous les projets sur mon github
+- Refactorer le code pour le fond animé pour l'optimiser
 
 # Qui je suis :
 Je suis un étudiant en dernière année de lycée, qui se spécialise en mathématiques et informatique. Passionné par la programmation, j’ai développé plusieurs outils pour automatiser des tâches quotidiennes, comme la sauvegarde de fichiers et la création de quiz pour tester mes connaissances.

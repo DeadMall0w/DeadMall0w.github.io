@@ -332,15 +332,15 @@ section {
 }
 
 /*  Projects section */
-
-
 .projects-text {
     font-size: 19px;
-    margin-left: 50px;
-    margin-right: 100px;
     flex: 1
 }
 
+#projets-title
+{
+    padding-bottom: 30px;
+}
 
 #projects
 {
@@ -355,12 +355,23 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px; 
+    text-align: center;
 }
 
 #projects-container > div
 {
+    border-radius: 25px;
     padding:30px;
+    background-color: #00000063;
+    text-align: center;
 
+}
+
+.project-image, .project-video
+{
+    max-width: 350px;
+    max-height: 400px;
+    border-radius: 15px;
 }
 
 
