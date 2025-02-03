@@ -407,3 +407,14 @@ section {
 .custom-shape-divider-top-1738609047 .shape-fill {
     fill: #00000049;
 }
+
+.custom-shape-divider-bottom-1738618870 .shape-fill {
+    fill: #00000049;
+}
+
+
+footer {
+    margin-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+}
