@@ -1,0 +1,4 @@
+You entered safe mode ! 
+[[wait]]
+[[green]]
+niceee...

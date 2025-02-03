@@ -1,11 +1,45 @@
 let inputFieldConsole = document.getElementById("input-field")
 
+let commands;
+
 inputFieldConsole.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         ShowLine("> "+inputFieldConsole.value);
+        ProcessCommand(inputFieldConsole.value);
         inputFieldConsole.value = "";
     }
 });
+
+async function loadFunctions()
+{
+    const files = await fetch("Content/Commands/commands.txt");
+    const content = await files.text();
+    commands = content.split("\n"); // To remove "retour chariot"
+    console.log(commands)
+}
+
+
+async function ProcessCommand(command)
+{
+    for (let i = 0; i < commands.length; i++) {
+        if (commands[i] == command)
+        {
+            console.log(command);
+            const files = await fetch("Content/Commands/" + command + ".txt");
+            const content = await files.text();
+            const commandLines = content.split("\n"); // To remove "retour chariot"
+            console.log(commandLines);
+        }
+    }
+    switch (command) {
+        case "ping":
+            ShowLine("pong")
+            break;
+    
+        default:
+            break;
+    }
+}
 
 function ClearConsole()
 {
@@ -42,7 +76,6 @@ function wait(ms) {
 
 async function LoadInitText()
 {
-    //TODO: RANDOM PART
     const files = await fetch("Content/InitTexts/commandInitText.txt");
     const content = await files.text();
     console.log(JSON.stringify(content))
@@ -113,6 +146,6 @@ function CompareArguments(arg1, arg2)
     return true;
 }
 
-
+loadFunctions();
 LoadInitText();
 // executeAfterWait();

@@ -201,6 +201,7 @@ section {
     text-align: none;
     margin-left: 80px;
     padding: 20px;
+    padding-bottom: 100px;
     flex: 1;
     background-color: #ffffff00;
     font-size: 20px;
@@ -281,7 +282,7 @@ section {
     align-items: center;
     padding: 5px;
     background-color: var(--input-container);
-    height: 35px;
+    height: 18px;
   }
   
   .prompt {
