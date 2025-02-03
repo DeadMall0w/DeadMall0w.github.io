@@ -1,0 +1,11 @@
+Searching for bugs... 
+[[wait]]
+[###-------] 30%
+[[wait]]
+[######----] 60%
+[[wait]]
+[##########] 100%
+[[wait]]
+Mission accomplished.
+[[green]] 
+All bugs converted to features!

@@ -1,3 +1,5 @@
 ls_skills.txt
 smile.txt
 booting_skills.txt
+scanning_opportunities.txt
+searching_bugs.txt

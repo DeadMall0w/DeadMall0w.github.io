@@ -1,0 +1,11 @@
+Scanning for opportunities... 
+[[wait]]
+[###-------] 30%
+[[wait]]
+[######----] 60%
+[[wait]]
+[##########] 100%
+[[wait]]
+Process finished. 
+[[green]]
+Results: Endless possibilities.
