@@ -1,16 +1,12 @@
-TODO :
-Refaire l'espace "Mes projets"
-Proposer une option pour mettre en anglais
-Améliorer l'affichage sur smartphone
-Tester l'affichage sur une tablette
-Mettre à jour mes projets
-Mettre à jour mon profil, rajouter une image ?
-Nettoyer un peu le code et supprimer ce qui est inutile
-Ajouter un lien vers mon CV
-Affichage dans un CLI ?
-
-
-
+A faire : 
+- Faire les fonctions helper (lire un fichier, diviser un fichier, ect...)
+- Terminer le site en global (version beta)
+- Faire la traduction en francais et en anglais (faire prompte pour demande la langue la premiere fois ? comme pour les cookies en bas)
+- Refaire la page de tous les projets (et refaire les liens)
+- Faire toutes les commands accessible
+- Refaire les petits trucs gadgets (lien mot en or, en doré, ect...)
+- Refaire la page de tous les projets (voir faire un viewer.js comme pour le markdown to html)
+- Terminer tous les projets sur mon github
 
 # Qui je suis :
 Je suis un étudiant en dernière année de lycée, qui se spécialise en mathématiques et informatique. Passionné par la programmation, j’ai développé plusieurs outils pour automatiser des tâches quotidiennes, comme la sauvegarde de fichiers et la création de quiz pour tester mes connaissances.
