@@ -347,7 +347,20 @@ section {
     background-color: #00000049;
     margin-left: 0px;
     padding-left: 100px;
-    margin-top: 60px;
+    padding-top: 10px;
+}
+
+#projects-container
+{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Trois colonnes, chaque colonne occupe un tiers de la largeur */
+  grid-gap: 10px; /* Espace entre les éléments de la grille */ 
+}
+
+#projects-container > div
+{
+    padding:30px;
+
 }
 
 
@@ -364,4 +377,22 @@ section {
 
 
 /* Waves */
-    
+.custom-shape-divider-top-1738609047 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: scaleY(-1);
+}
+
+.custom-shape-divider-top-1738609047 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 159px;
+}
+
+.custom-shape-divider-top-1738609047 .shape-fill {
+    fill: #00000049;
+}

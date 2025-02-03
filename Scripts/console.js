@@ -87,7 +87,6 @@ async function LoadInitText()
                 {
                 if (CompareArguments(lines[index], "wait"))
                 {
-                    console.log("wait...");
                     await wait(getRandomIntInRange(300, 1200));
                 }else if (CompareArguments(lines[index], "green"))
                 {

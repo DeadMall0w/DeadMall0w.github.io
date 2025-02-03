@@ -1,6 +1,6 @@
 // This script contains basics function (reading, cutting files, ...)
 
-let verboseMode=true; // More things will be printed to the console
+let verboseMode=false; // More things will be printed to the console
 
 async function ReadFile(fileName)
 {
