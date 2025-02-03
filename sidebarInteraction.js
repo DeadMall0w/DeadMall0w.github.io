@@ -35,20 +35,27 @@ const englishTranslationImage = document.getElementById('english-translation-ima
 const englishTranslation = document.getElementById('english-translation');
 const englishTranslationText = document.getElementById('english-translation-text');
 
+let willShow = false;
+
 function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function sidebarMouseEnter() 
 {
+    willShow = true;
     await wait(250); //TODO : Si on enleve la souris plus rapidement que 250ms, le texte reste affiché
-    lightBulbTEXT.style.display = 'grid';
-    frenchTranslationText.style.display = 'grid';
-    englishTranslationText.style.display = 'grid';
+    if (willShow)
+    {
+        lightBulbTEXT.style.display = 'grid';
+        frenchTranslationText.style.display = 'grid';
+        englishTranslationText.style.display = 'grid';
+    }
 
 }
 
 function sidebarMouseLeave() {
+    willShow=false;
     frenchTranslationText.style.display = 'none';
     lightBulbTEXT.style.display = 'none';
     englishTranslationText.style.display = 'none';
