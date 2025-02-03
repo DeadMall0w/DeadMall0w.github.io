@@ -192,8 +192,16 @@ section {
     flex: 1;
 }
 
+
+
 /* Section "welcome" */
 #welcome {
+    position: relative;
+    overflow: hidden;
+    text-align: none;
+    margin-left: 80px;
+    padding: 20px;
+    flex: 1;
     background-color: #ffffff00;
     font-size: 20px;
     display: flex; /* Utilisation de Flexbox */
