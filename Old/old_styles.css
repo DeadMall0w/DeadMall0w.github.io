@@ -1,0 +1,326 @@
+/* Importation de polices */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+/* Variables globales */
+:root {
+    --couleur-fond-principale: #0d001f;
+    --couleur-fond-secondaire: #2d0033;
+    --couleur-fond-sombre: #191717;
+}
+
+/* Sélection du texte */
+::-moz-selection { /** Pour Firefox */
+    color: rgb(255, 255, 255);
+    background: #1B2432;
+}
+
+::selection {
+    color: rgb(255, 255, 255);
+    background: #1B2432;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li {
+    display: inline-block;
+    width: 33%;
+    line-height: 1.6;
+}
+
+/* Boutons de navigation */
+.slide-button {
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.8s;
+    position: relative;
+    z-index: 1;
+}
+
+.slide-button::before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: rgb(255, 255, 255);
+    transition:transform 0.4s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.slide-button:hover::before{
+    transform: scaleX(1);
+}
+
+.slide-button:hover{
+    color:#000;
+}
+
+/* Corps et éléments de la page */
+body {
+    font-family: 'Comfortaa', 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color:#fff;
+    background-color: #110e1a;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 25%;
+}
+
+a {
+    color: #7237d1;
+    text-shadow: none;
+}
+
+h2 {
+    font-size: 32px;
+    text-decoration: underline;
+    color: #ffffff;
+    margin: 0;
+    text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h3 {
+    text-shadow:
+    2px 2px 0 #000000;
+}
+
+p {
+    text-shadow:
+    2px 2px 0 #000000;
+}
+
+#projets p, #parcours-scolaire p {
+    font-size: 16px;
+    color: #666;
+    text-shadow: none;
+}
+
+
+/* Éléments de fond */
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.point {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #3D3845;
+    border-radius: 50%;
+}
+
+.line {
+    position: absolute;
+    height: 1px;
+    background-color: #1B182C;
+    pointer-events: none;
+}
+
+.mouseLine {
+    position: absolute;
+    height: 1px;
+    background-color: #3f3864;
+    pointer-events: none;
+}
+
+/* En-tête */
+header {
+    background-color: var(--couleur-fond-sombre);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header a{
+    padding: 10px;
+}
+
+/* Sections */
+section {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Section "Accueil" */
+#accueil {
+    background-color: #ffffff00;
+    padding-top: 200px;
+    padding: 40px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 750px) {
+    h2 {
+        font-size: 24px;
+    }
+    #accueil {
+        padding-top: 150px;
+        padding: 30px;
+        font-size: 16px;
+    }
+}
+
+/* Section "Parcours Scolaire" */
+#parcours-scolaire {
+    background-color: #ffffff00;
+    padding: 40px;
+}
+
+#lien-jaune {
+    color: rgb(194, 197, 0);
+}
+
+/* Section "Projets" */
+#projets {
+    background-color: #07070798;
+    padding: 40px;
+}
+
+#projets img {
+    max-width: 50%;
+}
+
+#projets p {
+    margin-left: 20px;
+    padding-bottom: 60px;
+}
+
+#small {
+    padding-top: 20px;
+    height: 600px;
+    width: auto;
+}
+
+/* Projets en grille */
+.mini-projets {
+    padding-top: 20px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 20px;
+}
+
+.mini-projet img {
+    max-width: 100%;
+    min-width: 200px;
+}
+
+.mini-projet video {
+    max-height: 350px;
+}
+
+@media screen and (max-width: 750px) {
+    .mini-projets {
+        grid-template-columns: none;
+    }
+}
+
+/* À propos */
+#a-propos {
+    font-size: 20px;
+    margin: 30px 100px 50px 100px;
+}
+
+/* Effet de vague */
+#wave-section {
+    padding: 20px;
+    pointer-events: none;
+}
+
+.waveBottom,
+.waveHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.waveBottom svg,
+.waveHome svg {
+    position: relative;
+    display: block;
+    width: calc(103% + 1.3px);
+    height: 62px;
+}
+
+.waveHome,
+.waveTop,
+.waveBottom {
+    pointer-events: none;
+}
+
+.waveTop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waveTop svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 124px;
+}
+
+.waveHome .shape-fill {
+    fill: var(--couleur-fond-sombre);
+}
+
+.waveBottom, .waveTop .shape-fill {
+    fill: #07070798;
+}
+
+@media screen and (max-width: 1200px) {
+    .waveTop svg {
+        height: 60px;
+    }
+
+    .waveBottom svg,
+    .waveHome svg {
+        height: 30px;
+    }
+} 
+
+/* Pied de page */
+footer {
+    margin-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+}

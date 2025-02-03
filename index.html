@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <link rel="icon" href="img/icon.png" type="image/png" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Berquier Raphaël</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Berquier Raphael</title>
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fon-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
     <div id="background"></div>
-    <header>
-      <nav>
-        <ul>
-          <li><a class="slide-button" href="#parcours-scolaire">Parcours Scolaire</a>
-          </li>
-          <li><a class="slide-button" href="#projets">Projets</a></li>
-          <li><a class="slide-button" href="#a-propos">À Propos</a></li>
-          <li><a class="slide-button" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <!-- Waves Section -->
-    <section id="wave-section">
-      <div class="waveHome">
+    <div id="content">
+        <div id="welcome">
+            <p id="welcomeText">
+                Hi ! <br>
+                I'm <b class="rainbow-text">Raphaël</b>, <br>
+                First year student at IG2I.
+            </p>
+                <div class="terminal">
+                    <div class="title-bar">
+                      <div class="title">Console</div>
+                    </div>
+                    <div id="commandsContainer">
+                        <p class="command">> Init...</p>
+                        <p class="command">> Hello, world !<br> hello... again...</p>
+                    </div>
+                    <div class="input-container">
+                      <div class="prompt">root@web&gt;</div>
+                      <input id="input-field" type="text" placeholder="Type 'help'" autofocus autocomplete="off">
+                    </div>
+                  </div>
+                </div>
+    
+        <section id="parcours-scolaire">
+            <h1 id="school-career-title">Parcours Scolaire</h1>
+            <ul>
+                <li class="parcours">
+                    <h3 id="ig2i-title" >IG2I - Centrale lille 2024 - 2029</h3>
+                    <p>
+                    2024 - Admission
+                    </p>
+                </li>
+            <li class="parcours">
+                <h3>Lycée Edouard Branly 2021 - 2024</h3>
+                <p>
+                2024 - <a target="_blank" href="https://www.cambridgeenglish.org/fr/exams-and-tests/first/">Concours Cambridge First certifcate (B2)</a><br>
+                2024 - Participation aux <a target="_blank" href="https://www.education.gouv.fr/le-concours-general-des-lycees-et-des-metiers-un-prix-d-excellence-10022"> concours généraux</a> de NSI et Maths<br>
+                2024 - Participation aux prix <a target="_blank" href="https://www.tropheestangente.com/PTL2024.php"> tangente</a> et <a target="_blank" href="https://www.sciencespourtous.org/prix-du-livre-sciences-pour-tous/">sience pour tous</a><br>
+                2021-2024 - SI Euro (Science de l'ingénieur en Anglais) <br>
+                2023 - Participation aux <a href="https://www.education.gouv.fr/les-olympiades-nationales-de-mathematiques-5732" target="_blank" class="lien-rouge" >"Olympiades de mathématiques"</a><br>
+                2021-2022 - Option science de l'ingénieur
+                </p>
+            </li>
+            <li class="parcours">
+                <h3>Collège Paul Eluard 2016 - 2021</h3>
+                <p>
+                2019-2021 - Option LCE (Langue et Culture Européenne) <br>
+                2020 - Participation avec mon équipe à : <a href="https://www.lesmotsenor.org/" target="_blank" id="lien-jaune" >"Les Mots en Or"</a><br>
+                2018-2021 - Option Latin<br>
+                2016 - Participation au <a target="_blank" href="https://fr.wikipedia.org/wiki/Conseil_municipal_d%27enfants">Conseil Municipal</a> des Enfants de ma commune
+                </p>
+            </li>
+            </ul>
+        </section>
+
+        <section id="about-me">
+            <h1>About me</h1>
+                <div id="about-me-container">
+                    <p id="about-me-text">
+                        Je suis un étudiant en première année à <a href="https://ig2i.centralelille.fr/">IG2I - Centralelille</a>, où je me spécialise dans
+                        informatique et le génie industriel. <br>
+                        <br>
+                        Passionné par la programmation et l'informatique, mon objectif est de devenir développeur 
+                        logiciel.<br>
+                        <br>
+                        En dehors des cours, je consacre beaucoup de mon temps à la programmation.
+                        <br> <br>
+                        J'ai crée divers jeux, scripts et outils pour automatiser des tâches quotidiennes,
+                        telles que la sauvegarde de fichiers ou la création de quiz pour évaluer mes connaissances.
+                    </p>
+                    <img id="photo-profil" src="img/Photo-de-profil.png" alt="">
+                </div>
+        </section>
+
+
         <!-- SVG Wave -->
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
-    </section>
-
-    <section id="accueil">
-      <h2>Bienvenue sur mon portfolio</h2>
-      <p>
-        Je suis un étudiant en première année à <a href="https://ig2i.centralelille.fr/">IG2I - Centralelille</a>, où je me spécialise en
-        informatique et génie industriel. <br />
-        Passionné par la programmation et l'informatique, mon objectif est de devenir développeur 
-        logiciel.<br/>
-        En dehors des cours, je consacre beaucoup de mon temps à la programmation.
-        Je crée divers jeux, scripts et outils pour automatiser des tâches quotidiennes,
-        telles que la sauvegarde de fichiers ou la création de quiz pour évaluer mes connaissances.
-      </p>
-    </section>
-
-    <section id="parcours-scolaire">
-      <h2>Parcours Scolaire</h2>
-      <p>Je suis actuellement en première année à IG2I - Centralelille</p>
-      <ul>
-        <li>
-          <h3>IG2I - Centralelille - 2024 - 2029</h3>
-          <p>
-            2024 - Admission à l'école
-          </p>
-        </li>
-        <li class="without-dot">
-          <h3>Lycée Edouard Branly 2021 - 2024</h3>
-          <p>
-            2024 - <a target="_blank" href="https://www.cambridgeenglish.org/fr/exams-and-tests/first/">Concours Cambridge First certifcate (B2)</a><br />
-            2024 - Participation aux <a target="_blank" href="https://www.education.gouv.fr/le-concours-general-des-lycees-et-des-metiers-un-prix-d-excellence-10022"> concours généraux</a> de NSI et Maths<br />
-            2024 - Participation aux prix <a target="_blank" href="https://www.tropheestangente.com/PTL2024.php"> tangente</a> et <a target="_blank" href="https://www.sciencespourtous.org/prix-du-livre-sciences-pour-tous/">sience pour tous</a><br />
-            2021-2024 - SI Euro (Science de l'ingénieur en Anglais) <br />
-            2023 - Participation aux <a href="https://www.education.gouv.fr/les-olympiades-nationales-de-mathematiques-5732" target="_blank" class="lien-rouge" >"Olympiades de mathématiques"</a><br />
-            2021-2022 - Option science de l'ingénieur
-          </p>
-        </li>
-        <li>
-          <h3>Collège Paul Eluard 2016 - 2021</h3>
-          <p>
-            2019-2021 - Option LCE (Langue et Culture Européenne) <br />
-            2020 - Participation avec mon équipe à : <a href="https://www.lesmotsenor.org/" target="_blank" id="lien-jaune" >"Les Mots en Or"</a><br />
-            2018-2021 - Option Latin<br />
-            2016 - Participation au <a target="_blank" href="https://fr.wikipedia.org/wiki/Conseil_municipal_d%27enfants">Conseil Municipal</a> des Enfants de ma commune
-          </p>
-        </li>
-      </ul>
-      <!-- SVG Wave -->
       <div class="waveTop">
         <svg
           data-name="Layer 1"
@@ -97,154 +99,47 @@
           ></path>
         </svg>
       </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projets">
-      <h2>Mes Projets</h2>
-      <div class="projet">
-        <h3>Génération procédurale</h3>
-        <img
-          src="Projects/Procedural-generation/generation_procedural.png"
-          alt="Image du projet"
-        />
-        <p>Création d'un monde quasiment infini de manière totalement procédurale et automatique a l'aide du moteur graphique Unity. <br>
-          <a href="Projects/Procedural-generation/procedural-generation.html" target="_self">Voir le projet</a
-        ></p>
-      </div>
+        <section id="projects">
+            <h1>Projects</h1>
+                <div id="projects-container">
+                    <p id="projects-text">
+                        Je suis un étudiant en première année à <a href="https://ig2i.centralelille.fr/">IG2I - Centralelille</a>, où je me spécialise dans
+                        informatique et le génie industriel. <br>
+                        <br>
+                        Passionné par la programmation et l'informatique, mon objectif est de devenir développeur 
+                        logiciel.<br>
+                        <br>
+                        En dehors des cours, je consacre beaucoup de mon temps à la programmation.
+                        <br> <br>
+                        J'ai crée divers jeux, scripts et outils pour automatiser des tâches quotidiennes,
+                        telles que la sauvegarde de fichiers ou la création de quiz pour évaluer mes connaissances.
+                    </p>
+                </div>
+        </section>
 
-      <div class="projet">
-        <h2>Jeux vidéo</h2>
-        <video id="small" autoplay loop muted>
-          <source src="Projects/Games/platformer.mp4" type="video/mp4" />
-          Votre navigateur ne prend pas en charge la lecture de vidéos.
-        </video>
-        <div class="description">
-          <p>Grande variété de jeux vidéo tous codé avec Unity, allant de la 2D à la 3D jusqu'a l'implémentation de multijoueur, <br>
-            chacun proposant une expérience unique et représentant un défi technique.<br>
-            <a href="Projects/Games/games.html" target="_self">Voir les projets</a
-          ></p>
+    </div>
+
+    <div id="sidebar">
+        <div id="lightBulb" class="not-selectable, sidebar-item">
+            <img id="lightBulbIMG" src="img/light_bulb_off.png" alt="light bulb off" class="icon">
+            <span id="lightBulbTEXT" class="not-selectable, text">Mode sombre</span>
         </div>
-      </div>
-
-      <h2>Autres Projets</h2>
-      <section class="mini-projets">
-        <div class="mini-projet">
-          <video autoplay loop muted>
-            <source src="Projects/Automatisation/Sync/Sync.mp4" type="video/mp4" />
-            Votre navigateur ne prend pas en charge la lecture de vidéos.
-          </video>
-          <div class="description">
-            <h2>Automatisation</h2>
-            <p>
-              Des programmes que j'ai fait pour automatiser certaines taches
-              comme la sauvegarde de fichier et la collecte de devoir
-              <a href="Projects/Automatisation/Automatisation.html" target="_self">Voir le projet</a>
-            </div>
-          </div>
+         <div id="english-translation" class="not-selectable, sidebar-item">
+            <img  id="english-translation-image" src="img/english_flag.png" alt="french flag" class="icon">
+            <span id="english-translation-text" class="not-selectable, text">EN</span>
         </div>
-
-        <div class="mini-projet">
-          <video autoplay loop muted>
-            <source src="Projects/Numworks/dino chrome/dino_chrome.mp4" type="video/mp4" />
-            Votre navigateur ne prend pas en charge la lecture de vidéos.
-          </video>
-          <div class="description">
-            <h2>Numworks</h2>
-            <p>
-              J'ai codé plusieurs jeux pour la calculatrice numworks, pour
-              apprendre le python et créer des jeux sans aucune aide (moteur
-              graphique, physique deja faites, ect...)<br>
-              <a href="Projects/Numworks/Numworks.html" target="_self">Voir le projet</a>
-            </div>
-          </div>
+        <div id="french-translation" class="not-selectable, sidebar-item">
+            <img  id="french-translation-image" src="img/french_flag_on.png" alt="English flag" class="icon">
+            <span id="french-translation-text" class="not-selectable, text">FR</span>
         </div>
+    </div>
 
-        <div class="mini-projet">
-          <video autoplay loop muted>
-            <source src="Projects/Ascii-maze/Gameplay/gameplay 480p.mp4" type="video/mp4" />
-            Votre navigateur ne prend pas en charge la lecture de vidéos.
-          </video>
-          <div class="description">
-            <h2>Ascii maze</h2>
-            <p>
-              Projet qui consistait a faire un mini jeu de labyrinthe qui fonctionne
-              dans la console avec uniquement des characters ASCII.<br>
-              <a href="Projects/Ascii-maze/ascii-maze.html" target="_self">Voir le projet</a>
-            </p>
-          </div>
-        </div>
 
-        <div class="mini-projet">
-          <img src="Projects/Board-game/Img/presentation.png" alt="Projet 4" />
-          <div class="description">
-            <h2>Jeu de plateau</h2>
-            <p>
-              Invention d'un jeu de plateau et des règles qui repose sur la réflexion et la stratégie pour gagner.<br>
-              <a href="Projects/Board-game/board-game.html" target="_self">Voir le projet</a>
-            </p>
-          </div>
-        </div>
-      </section>
-    </section>
+    <script src="sidebarInteraction.js"></script>
+    <script src="translation.js"></script>
+    <script src="background.js"></script>
+    <script src="console.js"></script>
 
-    <section id="wave-section">
-      <p></p>
-      <div class="waveBottom">
-        <!-- SVG Wave -->
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="a-propos">
-      <h2>Plus sur moi</h2>
-      <p>
-        J’ai acquis une solide base dans plusieurs langages de programmation,
-        dont le C#, Python, HTML, CSS, JavaScript, <br>
-        et je continue d’apprendre
-        constamment de nouveaux langages comme le C++ et le GLSL. <br>
-         J’ai également
-        acquis une bonne maîtrise des outils de programmation tels que Git,
-        GitHub, Unity et Visual Studio Code. <br>
-        <br>
-        Je suis passionné par les défis, qu’ils soient liés à la programmation
-        ou au sport. <br>
-        J’ai pratiqué le Viet vo Dao pendant 5 ans et le paddle en
-        club pendant 3 ans, et je continue à faire du paddle pendant l’été. <br>
-        En matière de programmation, j’aime particulièrement les défis <br>
-        qui impliquent de coder un programme dans un délai serré ou d’apprendre un
-        nouveau langage de programmation. <br>Pendant mon temps libre, je m’adonne à
-        la résolution de problèmes sur des sites comme <a target="_blank" href="https://leetcode.com/">LeetCode</a>, <br>
-        qui proposent une grande variété de défis de programmation.
-      </p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Vous pouvez me contacter à l'adresse e-mail suivante : <a id="mail" href="mailto:prenom.nom@mail.com">nom.prenom@mail.com</a> <br>
-        <br>
-        Pour voir d'autres projets : <a href="https://github.com/DeadMall0w/" target="_blank">Github</a>
-      </p>
-    </section>
-
-    <footer>
-      <p>Mon CV est disponible <a href="/CV/CV.pdf">ici</a></p>
-      <p>Le code source de ce site est entièrement disponible sur <a target="_blank" href="https://github.com/DeadMall0w/DeadMall0w.github.io">Github</a></p>
-      <p>&copy; 2024 Berquier Raphaël</p>
-    </footer>
-    <script src="background.js"></script> <!-- Script for animated background -->
-  </body>
+</body>
 </html>

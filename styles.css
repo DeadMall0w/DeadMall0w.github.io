@@ -1,87 +1,32 @@
-/* Importation de polices */
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
-/* Variables globales */
+/* TODO : add <a> */
 :root {
-    --couleur-fond-principale: #0d001f;
-    --couleur-fond-secondaire: #2d0033;
-    --couleur-fond-sombre: #191717;
+    --bg-color:#f1f1f1;
+    --text-color:#686868;
+    --point-color:#3e3c41;
+    --line-color:#9b97a1;
+    --mouse-line-color:#1b1b1b;
+
+    --title-bar:#373b41;
+    --input-container:#373b41;
+    --input-field:#c5c8c6;
+    --command:#181818;
+    --command-background:#1d1f21;
+    --border-color:#373b41;
+    --font-color-terminal:#c5c8c6;
+
+    --sidebar-color:#333;
+
 }
 
-/* Sélection du texte */
-::-moz-selection { /** Pour Firefox */
-    color: rgb(255, 255, 255);
-    background: #1B2432;
-}
 
-::selection {
-    color: rgb(255, 255, 255);
-    background: #1B2432;
-}
-
-/* Navigation */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-ul li {
-    display: inline-block;
-    width: 33%;
-    line-height: 1.6;
-}
-
-/* Boutons de navigation */
-.slide-button {
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: 0.8s;
-    position: relative;
-    z-index: 1;
-}
-
-.slide-button::before {
-    content: '';
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-    background-color: rgb(255, 255, 255);
-    transition:transform 0.4s;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-.slide-button:hover::before{
-    transform: scaleX(1);
-}
-
-.slide-button:hover{
-    color:#000;
-}
-
-/* Corps et éléments de la page */
 body {
     font-family: 'Comfortaa', 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    color:#fff;
-    background-color: #110e1a;
+    color: var(--text-color);
+    background-color: var(--bg-color);
     background-size: cover;
     background-attachment: fixed;
     background-size: 25%;
@@ -92,10 +37,9 @@ a {
     text-shadow: none;
 }
 
-h2 {
-    font-size: 32px;
-    text-decoration: underline;
-    color: #ffffff;
+h1 {
+    font-size: 36px;
+    color: var(--text-color);
     margin: 0;
     text-shadow:
   -1px -1px 0 #000,  
@@ -104,24 +48,120 @@ h2 {
     1px 1px 0 #000;
 }
 
-h3 {
-    text-shadow:
-    2px 2px 0 #000000;
+ul li { /* remove dots of list*/
+    display: inline-block;
+    width: 33%;
+    line-height: 1.6;
 }
 
-p {
-    text-shadow:
-    2px 2px 0 #000000;
+.parcours{
+    vertical-align: top;
 }
 
-#projets p, #parcours-scolaire p {
-    font-size: 16px;
-    color: #666;
-    text-shadow: none;
+#parcours-scolaire
+{
+    padding-top:30px;
 }
 
+.content {
+    margin-left: 160px;
+    padding: 20px;
+    flex: 1;
+}
 
-/* Éléments de fond */
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    background-color: var(--sidebar-color);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    transition: width 0.3s ease;
+}
+
+#sidebar:hover {
+    width: 150px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    padding: 20px 15px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+/* Elements of the sidebar */
+#lightBulb
+{
+    margin-bottom: 30px;
+}
+
+#lightBulbTEXT
+{
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#french-translation-text, #english-translation-text
+{
+    padding-left: 15px;
+}
+.not-selectable
+{
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.icon {
+    text-decoration: none;
+    padding-left: 0px;
+    width: 100%;
+    max-width: 30px;
+}
+
+.text {
+    display: grid;
+    place-items: center;
+}
+
+.content {
+    margin-left: 80px;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Animated background */
+.point {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: var(--point-color);
+    border-radius: 50%;
+}
+
+.line {
+    position: absolute;
+    height: 1px;
+    background-color: var(--line-color);
+    pointer-events: none;
+}
+
+.mouseLine {
+    position: absolute;
+    height: 1px;
+    background-color: var(--mouse-line-color);
+    pointer-events: none;
+}
+
 #background {
     position: fixed;
     top: 0;
@@ -131,196 +171,197 @@ p {
     z-index: -1;
 }
 
-.point {
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background-color: #3D3845;
-    border-radius: 50%;
+/* Mouse selection */
+::-moz-selection { /** For Firefox */
+    color: rgb(255, 255, 255);
+    background: #1B2432;
 }
 
-.line {
-    position: absolute;
-    height: 1px;
-    background-color: #1B182C;
-    pointer-events: none;
-}
-
-.mouseLine {
-    position: absolute;
-    height: 1px;
-    background-color: #3f3864;
-    pointer-events: none;
-}
-
-/* En-tête */
-header {
-    background-color: var(--couleur-fond-sombre);
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-header a{
-    padding: 10px;
+::selection {
+    color: rgb(255, 255, 255);
+    background: #1B2432;
 }
 
 /* Sections */
 section {
     position: relative;
     overflow: hidden;
-    text-align: center;
-}
-
-/* Section "Accueil" */
-#accueil {
-    background-color: #ffffff00;
-    padding-top: 200px;
-    padding: 40px;
-    font-size: 20px;
-}
-
-@media screen and (max-width: 750px) {
-    h2 {
-        font-size: 24px;
-    }
-    #accueil {
-        padding-top: 150px;
-        padding: 30px;
-        font-size: 16px;
-    }
-}
-
-/* Section "Parcours Scolaire" */
-#parcours-scolaire {
-    background-color: #ffffff00;
-    padding: 40px;
-}
-
-#lien-jaune {
-    color: rgb(194, 197, 0);
-}
-
-/* Section "Projets" */
-#projets {
-    background-color: #07070798;
-    padding: 40px;
-}
-
-#projets img {
-    max-width: 50%;
-}
-
-#projets p {
-    margin-left: 20px;
-    padding-bottom: 60px;
-}
-
-#small {
-    padding-top: 20px;
-    height: 600px;
-    width: auto;
-}
-
-/* Projets en grille */
-.mini-projets {
-    padding-top: 20px;
-    margin: 0px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    gap: 20px;
-}
-
-.mini-projet img {
-    max-width: 100%;
-    min-width: 200px;
-}
-
-.mini-projet video {
-    max-height: 350px;
-}
-
-@media screen and (max-width: 750px) {
-    .mini-projets {
-        grid-template-columns: none;
-    }
-}
-
-/* À propos */
-#a-propos {
-    font-size: 20px;
-    margin: 30px 100px 50px 100px;
-}
-
-/* Effet de vague */
-#wave-section {
+    text-align: none;
+    margin-left: 80px;
     padding: 20px;
-    pointer-events: none;
+    flex: 1;
 }
 
-.waveBottom,
-.waveHome {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
 
-.waveBottom svg,
-.waveHome svg {
+
+/* Section "welcome" */
+#welcome {
     position: relative;
-    display: block;
-    width: calc(103% + 1.3px);
-    height: 62px;
-}
-
-.waveHome,
-.waveTop,
-.waveBottom {
-    pointer-events: none;
-}
-
-.waveTop {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+    text-align: none;
+    margin-left: 80px;
+    padding: 20px;
+    padding-bottom: 100px;
+    flex: 1;
+    background-color: #ffffff00;
+    font-size: 20px;
+    display: flex; /* Utilisation de Flexbox */
+    align-items: center; /* Centre verticalement les éléments */
 }
 
-.waveTop svg {
+
+#welcomeText {
+    margin-right: 20px;
+    padding-left: 70px;
+    padding-top: 90px;
+    font-size: 50px;
+    line-height: 80px;
+}
+
+.rainbow-text {
+    background: linear-gradient(90deg, rgb(254, 187, 230), rgb(72, 0, 144));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-move 3s infinite linear;
+  }
+
+  @keyframes gradient-move {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+      }
+    }
+    
+    
+
+
+  .terminal {
     position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 124px;
+    background-color: var(--command-background);
+    color: var(--font-color-terminal);
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 120px;
 }
 
-.waveHome .shape-fill {
-    fill: var(--couleur-fond-sombre);
+
+  .title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--title-bar); 
+    padding: 5px;
+    height: 25px;
+}
+  
+  .title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+  
+  
+  #commandsContainer {
+    height: calc(100% - 60px);
+    overflow: auto;
+    padding: 10px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  .input-container {
+      display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--input-container);
+    height: 18px;
+  }
+  
+  .prompt {
+    margin-right: 5px;
+    font-family: 'Cascadia Code','Courier New', Courier, monospace;
+}
+  
+#input-field {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--input-field);
+    font-family: 'Cascadia Code','Courier New', Courier, monospace;
+    font-size: 16px;
+    width: 100%;
+}
+.command 
+{
+    padding-left: 5px;
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 30px;
+    background-color: var(--command);
+    font-family: 'Cascadia Code','Courier New', Courier, monospace;
 }
 
-.waveBottom, .waveTop .shape-fill {
-    fill: #07070798;
+
+/* About me section */
+
+#about-me-container {
+    display: flex;
+    align-items: center;
 }
 
-@media screen and (max-width: 1200px) {
-    .waveTop svg {
-        height: 60px;
-    }
+#photo-profil {
+    width: 550px;
+    height: auto;
+    margin-right: 30px;
+}
 
-    .waveBottom svg,
-    .waveHome svg {
-        height: 30px;
-    }
+#about-me-text {
+    font-size: 19px;
+    margin-left: 50px;
+    margin-right: 100px;
+    flex: 1
+}
+
+/*  Projects section */
+
+
+.projects-text {
+    font-size: 19px;
+    margin-left: 50px;
+    margin-right: 100px;
+    flex: 1
+}
+
+
+#projects
+{
+    background-color: #00000049;
+    margin-left: 0px;
+    padding-left: 100px;
+    margin-top: 60px;
+}
+
+
+/* Consoles prints color */
+.green 
+{
+    color: green;
 } 
 
-/* Pied de page */
-footer {
-    margin-top: 20px;
-    padding-bottom: 0px;
-    text-align: center;
+.red 
+{
+    color:red;
 }
+
+
+/* Waves */
+    
