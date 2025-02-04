@@ -4,3 +4,7 @@ ig2i-title
 projets-title
 project-text-procedural-world
 project-text-mobile-game
+project-text-automatisation
+project-text-numworks
+project-text-ascii-maze
+project-text-board-game
