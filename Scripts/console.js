@@ -57,13 +57,25 @@ function ShowLine(text, color)
     para.appendChild(node);
     const element = document.getElementById("commandsContainer");
     para.classList.add("command");
-    //? Use a switch ?
-    if (color == 1)
-    {
-        para.classList.add("green");
-    }else if(color == 2)
-    {
-        para.classList.add("red");
+    console.log("color : " + color);
+    switch (color) {
+        case 1:
+            para.classList.add("green");
+            break;
+        case 2:
+            para.classList.add("red");
+            break;
+        case 3:
+            para.classList.add("yellow");
+            break;
+        case 4:
+            para.classList.add("blue")
+            break;
+        case 100:
+            para.classList.add("rainbow-text");
+            break;
+        default:
+            break;
     }
     element.appendChild(para);
 }
@@ -84,16 +96,28 @@ async function LoadInitText()
     for (let index = 0; index < lines.length; index++) {
         if (lines[index].length >= 2){
             if (lines[index][0]=='[' && lines[index][1] == '[')
-                {
-                if (CompareArguments(lines[index], "wait"))
-                {
-                    await wait(getRandomIntInRange(300, 1200));
-                }else if (CompareArguments(lines[index], "green"))
-                {
-                    color = 1;
-                }else if (CompareArguments(lines[index], "red"))
-                {
-                    color = 2;
+            {
+                switch (lines[index]) {
+                    case "[[wait]]":
+                        await wait(getRandomIntInRange(300, 1200));
+                        break;
+                    case "[[green]]":
+                        color=1;
+                        break;
+                    case "[[red]]":
+                        color=2;
+                        break;
+                    case "[[yellow]]":
+                        color=3;
+                        break;
+                    case "[[blue]]":
+                        color=4;
+                        break;
+                    case "[[rainbow]]":
+                        color=100;
+                        break;
+                    default:
+                        break;
                 }
                 continue;
             }
