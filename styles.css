@@ -229,6 +229,20 @@ section {
     flex: 1
 }
 
+/* More on me section */
+#more-on-me-container {
+    display: flex;
+    align-items: center;
+}    
+
+#more-on-me-text {
+    font-size: 19px;
+    margin-left: 50px;
+    margin-right: 100px;
+    flex: 1
+}
+
+
 /*  Projects section */
 .projects-text {
     font-size: 19px;
@@ -250,19 +264,29 @@ section {
 
 #projects-container
 {
-    display: grid;
+    width: 100%;
+    /*display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px; 
+    */
+    display: flex;
     text-align: center;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    row-gap: 100px;
 }
 
 #projects-container > div
 {
+    max-width: 400px;
     border-radius: 25px;
     padding:30px;
     background-color: #00000063;
     text-align: center;
-
 }
 
 .project-image, .project-video
