@@ -244,6 +244,8 @@ section {
     text-align: left;
 }
 
+
+
 .text-image h3{
     padding-left: 30px;
     font-size: 30px;
@@ -291,3 +293,16 @@ section {
 footer {
     text-align: center;
 }
+
+/* To continue later
+@media (max-width:700px) {
+    .text-image p {
+        font-size: 14px;
+    }
+
+    .text h2{
+        padding-left: 40px;
+        font-size: 20px;
+    }
+}
+    */
