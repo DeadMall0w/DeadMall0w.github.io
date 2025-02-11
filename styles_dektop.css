@@ -193,12 +193,18 @@ section {
     align-items: center; /* Centre verticalement les éléments */
 }
 
+@media (max-width: 900px) {
+    #welcome{
+    margin-left: 20px;
+    }
+}
+
 #welcomeText {
     margin-right: 20px;
     padding-left: 70px;
     padding-top: 90px;
-    font-size: 50px;
-    line-height: 80px;
+    font-size: 4.6vw;
+    line-height: 6vw;
     text-shadow: rgb(0, 0, 0) 1px 0 10px;
 }
 
@@ -216,7 +222,24 @@ section {
 {
     display: block;
 }
-@media (max-width: 920px) {
+
+@media (max-width: 649px) {
+    #college
+    {
+        display: none;
+    }
+
+    .career-contents {
+        max-width: 200px;
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        line-height: 20px;
+
+      }
+}
+
+@media (min-width:650px) and (max-width: 920px) {
     #college
     {
         display: none;
@@ -263,9 +286,15 @@ section {
 }    
 
 #photo-profil {
+    display: block;
     width: 550px;
     height: auto;
     margin-right: 30px;    
+}
+@media (max-width: 1200px) {
+    #photo-profil {
+        display: none;
+    }
 }
 
 #about-me-text {
@@ -273,6 +302,15 @@ section {
     margin-left: 50px;
     margin-right: 100px;
     flex: 1
+}
+
+@media (max-width: 1200px) {
+    #about-me-text {
+        font-size: 19px;
+        margin-left: 20px;
+        margin-right: 50px;
+        flex: 1
+    }
 }
 
 /* More on me section */
@@ -286,6 +324,15 @@ section {
     margin-left: 50px;
     margin-right: 100px;
     flex: 1
+}
+
+@media (max-width: 900px) {
+    #more-on-me-text {
+        font-size: 19px;
+        margin-left: 20px;
+        margin-right: 50px;
+        flex: 1
+    }
 }
 
 
@@ -403,6 +450,7 @@ section {
 
 /* Console */
 .terminal {
+    display:block;
     position: relative;
     background-color: var(--command-background);
     color: var(--font-color-terminal);
@@ -412,6 +460,13 @@ section {
     height: 400px;
     overflow: hidden;
     margin-top: 120px;
+}
+
+@media (max-width: 750px) {
+    .terminal
+    {
+        display: none;
+    }
 }
 
 
