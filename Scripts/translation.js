@@ -12,9 +12,8 @@ async function ChangeLanguage(lang) {
         const name = changes[i];
         try {
             document.getElementById(name).innerHTML = texts[name];
-            //console.log("Changed : " + name);
         } catch (error) {
-            console.error("Couldn't find : " + name)
+            console.error("Couldn't find : " + name + "line : ", i)
         }
     }
 }
