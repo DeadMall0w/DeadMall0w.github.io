@@ -57,7 +57,6 @@ function ShowLine(text, color)
     para.appendChild(node);
     const element = document.getElementById("commandsContainer");
     para.classList.add("command");
-    console.log("color : " + color);
     switch (color) {
         case 1:
             para.classList.add("green");
