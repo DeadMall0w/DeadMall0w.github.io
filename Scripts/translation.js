@@ -1,4 +1,11 @@
 defaultLanguage = "fr";
+const userLang = navigator.language || navigator.languages[0]; 
+console.log("Dected language : ", userLang);
+if(userLang.toLowerCase() == "en" ||userLang.toLowerCase()=="en-en"){
+    defaultLanguage = "en";
+}else if(userLang.toLowerCase() == "us" ||userLang.toLowerCase()=="en-us"){
+    defaultLanguage = "en";
+}
 
 async function ChangeLanguage(lang) {
     console.log("Changing language to " + lang);
