@@ -4,8 +4,8 @@
     "ig2i-title": "IG2I - Centrale Lille 2024 - 2029",
     "projets-title": "Mes projects",
     "project-text-procedural-world": "Création de mondes infinis de manière totalement procédurale et automatique à l'aide du moteur graphique Unity. <br> <a href=\"Projects/Procedural-generation/procedural-generation.html\" target=\"_self\">Voir le projet</a>",
-    "project-text-mobile-game": "Grande variété de jeux vidéo tous codé avec Unity, allant de la 2D à la 3D jusqu'a l'implémentation de multijoueur, chacun proposant une expérience unique et représentant un défi technique.",
-    "project-text-automatisation": "Des programmes et scripts afin d'automatiser certaines tâches comme la sauvegarde de fichier et la collecte de devoir. <br> Ainsi que la création d'un NAS.",
+    "project-text-mobile-game": "Grande variété de jeux vidéo tous codé avec Unity, allant de la 2D à la 3D jusqu'a l'implémentation de multijoueur, chacun proposant une expérience unique et représentant un défi technique. <br> <a href=\"Projects/Games/games.html\" target=\"_self\">Voir les projets</a>",
+    "project-text-automatisation": "Des programmes et scripts afin d'automatiser certaines tâches comme la sauvegarde de fichier et la collecte de devoir. <br> Ainsi que la création d'un NAS. <br> <a href=\"Projects/Automatisation/Automatisation.html\" target=\"_self\">Voir le projet</a>",
     "project-text-numworks": "J'ai codé plusieurs jeux pour la calculatrice numworks, pour apprendre le python et créer des jeux sans aucune aide (moteur graphique, physique deja faites, ect...)<br> <a href=\"Projects/Numworks/Numworks.html\" target=\"_self\">Voir le projet</a>",
     "project-text-ascii-maze": "Projet qui consistait a faire un mini jeu de labyrinthe qui fonctionne dans la console avec uniquement des characters ASCII.<br> <a href=\"Projects/Ascii-maze/ascii-maze.html\" target=\"_self\">Voir le projet</a>",
     "project-text-board-game": "Invention d'un jeu de plateau et des règles qui repose sur la réflexion et la stratégie pour gagner.<br> <a href=\"Projects/Board-game/board-game.html\" target=\"_self\">Voir le projet</a>"
