@@ -30,6 +30,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-size: 25%;
+    font-size: 1.3em;
+    line-height: 1.3em;
 }
 
 a {
@@ -235,7 +237,7 @@ section {
     min-width: 0;
     max-width: none; /* Désactive la limite de largeur */
     vertical-align: top;
-    line-height: 26px;
+    line-height: 1.55em;
 }
 
 
@@ -501,8 +503,8 @@ section {
     color: var(--font-color-terminal);
     border: 2px solid var(--border-color);
     border-radius: 5px;
-    width: 600px;
-    height: 400px;
+    width: 800px;
+    height: 500px;
     overflow: hidden;
     margin-top: 120px;
 }

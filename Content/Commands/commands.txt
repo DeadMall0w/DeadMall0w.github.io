@@ -1,2 +1,4 @@
 help
 safemode
+whoami
+quisuisje

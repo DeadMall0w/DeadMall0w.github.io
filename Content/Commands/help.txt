@@ -1,1 +1,19 @@
-HELPPPPP ! 
+This console is a <b>bash-inspired</b> interface for browsing my CV.<br>
+Commands behave like in a real shell, but only the most useful ones are implemented.<br>
+<br>
+Available commands:<br>
+  <b>help</b>       - show this message<br>
+  <b>ls [dir]</b>   - list files/folder<br>
+  <b>cat <file></b> - read file content<br>
+  <b>cd &lt;dir></b>   - move between directories<br>
+  <b>tree</b>       - show folder tree<br>
+  <b>whoami</b>     - display my name + bio<br>
+  <b>date</b>       - current date & time<br>
+  <b>echo <text></b>- repeat your text<br>
+  <b>clear / cls</b>- clear the console<br>
+  <b>contact</b>    - how to reach me<br>
+<br>
+Notes:<br>
+  • Inspired by bash, simplified for clarity<br>
+  • Files = my CV, projects, experience<br>
+  • Type commands like you would in a Linux terminal<br>
