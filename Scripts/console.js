@@ -17,6 +17,14 @@ inputFieldConsole.addEventListener("keydown", function (event) {
     }
 });
 
+/*
+
+/root
+    /projects
+        
+    contact
+*/
+
 
 async function LoadFunctions() {
     const files = await fetch("Content/Commands/commands.txt");
@@ -35,8 +43,6 @@ async function ProcessCommand(command) {
         } catch (e) {
             ShowLine("Erreur lors du chargement de la commande.", 2);
         }
-    } else if (cmd === "sudo") {
-        ShowLine("Sorry, Permissions denied.", 2);
     } else {
         switch (cmd) {
             case "ping":
@@ -52,6 +58,25 @@ async function ProcessCommand(command) {
                     ShowLine("");
                 }
                 break;
+            case "date":
+                const now = new Date();
+                const months = [
+                    "January", "February", "March", "April", "May", "June",
+                    "July", "August", "September", "October", "November", "December"
+                ];
+                const day = now.getDate();
+                const month = months[now.getMonth()];
+                const year = now.getFullYear();
+                const hour = now.getHours().toString().padStart(2, '0');
+                const minute = now.getMinutes().toString().padStart(2, '0');
+                ShowLine(`${day} ${month} ${year} ${hour}h${minute}`);
+                break;
+            case "pwd":
+
+            case "ls":
+
+            case "cd":
+
             default:
                 ShowLine("Commande non trouvée.", 2);
                 break;

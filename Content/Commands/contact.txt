@@ -1,0 +1,3 @@
+- <a id="mail" target="_blank" href="mailto:raphael.berquier@gmail.com">raphael.berquier@gmail.com</a>
+- <a target="_blank" href="https://www.linkedin.com/in/rapha%C3%ABl-berquier-0a3646329/">Linkedin</a>
+- <a target="_blank" href="https://github.com/DeadMall0w">Github</a>

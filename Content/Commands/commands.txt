@@ -1,4 +1,5 @@
 help
-safemode
 whoami
 quisuisje
+sudo
+contact

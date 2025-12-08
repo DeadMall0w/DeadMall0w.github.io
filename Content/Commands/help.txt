@@ -1,4 +1,4 @@
-This console is a <b>bash-inspired</b> interface for browsing my CV.<br>
+This console is a <b>bash-inspired</b> interface.<br>
 Commands behave like in a real shell, but only the most useful ones are implemented.<br>
 <br>
 Available commands:<br>
@@ -12,6 +12,7 @@ Available commands:<br>
   <b>echo <text></b>- repeat your text<br>
   <b>clear / cls</b>- clear the console<br>
   <b>contact</b>    - how to reach me<br>
+  <b>pwd</b>        - current directory<br>
 <br>
 Notes:<br>
   • Inspired by bash, simplified for clarity<br>

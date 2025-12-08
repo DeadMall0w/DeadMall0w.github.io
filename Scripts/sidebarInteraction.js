@@ -1,21 +1,25 @@
 let themeIndex = 1;
-const bgColor = ["#131116", "#E6EDED"];
-const textColor = ["#FFF", "#000"];
-const pointColor = ["#3D3845", "#3e3c41"];
-const lineColor = ["#1B182C", "#9b97a1"];
-const mouseLineColor = ["#3D3845", "#1b1b1b"];
+const bgColor = ["#131116", "#FFFFFF"];
+const textColor = ["#FFF", "#252b35"];
+const pointColor = ["#3D3845", "#c8c2d1"];
+const lineColor = ["#1B182C", "#e1d8ec"];
+const mouseLineColor = ["#3D3845", "#8b7e8b"];
 // Console :
 
-const titleBar = ["#373b41", "#C1C2CC"]
-const inputContainer = ["#373b41", "#C1C2CC"]
-const inputField = ["#c5c8c6", "#323232"]
-const command = ["#181818", "#8E8E96"]
-const commandBackground = ["#1d1f21", "#A5A5AF"]
-const borderColor = ["#373b41", "#C1C2CC"]
-const fontColor = ["#c5c8c6", "#323232"]
+const titleBar = ["#373b41", "#373b41"]
+const inputContainer = ["#373b41", "#373b41"]
+const inputField = ["#c5c8c6", "#c5c8c6"]
+const command = ["#181818", "#181818"]
+const commandBackground = ["#1d1f21", "#1d1f21"]
+const borderColor = ["#373b41", "#373b41"]
+const fontColor = ["#c5c8c6", "#c5c8c6"]
 
 // sidebar :
-const sidebarColor = ["#333", "#BCBCBC"];
+const sidebarColor = ["#333", "#cac6c6"];
+
+// Couleurs projets
+const projectsBackground = ['#00000049', "#9fbada2c"];
+const projectBackground = ["#00000063", "#cad4e44f"];
 
 const hoverElement = document.getElementById('sidebar');
 
@@ -94,6 +98,9 @@ function switchColorMode() {
     
     //sidebar
     document.documentElement.style.setProperty('--sidebar-color', sidebarColor[themeIndex]);
+
+    document.documentElement.style.setProperty('--projects-background', projectsBackground[themeIndex]);
+    document.documentElement.style.setProperty('--project-background', projectBackground[themeIndex]);
 
 }
 

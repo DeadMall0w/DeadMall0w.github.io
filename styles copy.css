@@ -2,11 +2,11 @@
 
 /* TODO : add <a> */
 :root {
-    --bg-color:rgb(255, 255, 255);
-    --text-color:#252b35;
-    --point-color:#c8c2d1;
-    --line-color:#e1d8ec;
-    --mouse-line-color:#8b7e8b;
+    --bg-color:#F5EFE7;
+    --text-color:#686868;
+    --point-color:#3e3c41;
+    --line-color:#9b97a1;
+    --mouse-line-color:#1b1b1b;
 
     --title-bar:#373b41;
     --input-container:#373b41;
@@ -16,13 +16,7 @@
     --border-color:#373b41;
     --font-color-terminal:#c5c8c6;
 
-    --sidebar-color:#cac6c6;
-
-
-    /* Fond pour tous les projets */
-    --projects-background:#9fbada2c; 
-    /* Couleur de fond des cases de projet */
-    --project-background:#cad4e44f;
+    --sidebar-color:#333;
 
 }
 
@@ -49,11 +43,11 @@ h1 {
     font-size: 36px;
     color: var(--text-color);
     margin: 0;
-    /* text-shadow:
+    text-shadow:
   -1px -1px 0 #000,  
    1px -1px 0 #000,
    -1px 1px 0 #000,
-    1px 1px 0 #000; */
+    1px 1px 0 #000;
 }
 
 ul li { /* remove dots of list*/
@@ -213,7 +207,7 @@ section {
     padding-top: 90px;
     font-size: 4.6vw;
     line-height: 6vw;
-    /* text-shadow: rgb(0, 0, 0) 1px 0 10px; */
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
 }
 
 @media (max-width: 900px) {
@@ -378,7 +372,7 @@ section {
 
 #projects
 {
-    background-color: var(--projects-background);
+    background-color: #00000049;
     margin-left: 0px;
     padding-left: 100px;
     padding-top: 10px;
@@ -403,7 +397,7 @@ section {
     max-width: 400px;
     border-radius: 25px;
     padding:30px;
-    background-color: var(--project-background);
+    background-color: #00000063;
     text-align: center;
 }
 
@@ -497,7 +491,7 @@ section {
 }
 
 .wave-bottom .shape-fill, .wave-top .shape-fill {
-    fill: var(--projects-background);;
+    fill: #00000049;
 }
 
 
