@@ -1,7 +1,7 @@
 let inputFieldConsole = document.getElementById("input-field")
 
 let commands;
-let finishLoading = true; // temporaire pour que le debug soit plus rapide
+let finishLoading = false;
 inputFieldConsole.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         if (finishLoading) {
